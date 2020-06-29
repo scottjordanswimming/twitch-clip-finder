@@ -1,0 +1,3157 @@
+Started GET "/" for ::1 at 2020-06-22 11:05:54 -0400
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+AbstractController::ActionNotFound (The action 'home' could not be found for SessionsController):
+  
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.3.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.3) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.3) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.3) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.3) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-06-22 11:06:35 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#home as HTML
+Completed 406 Not Acceptable in 6ms (ActiveRecord: 0.0ms | Allocations: 1912)
+
+
+  
+ActionController::MissingExactTemplate (SessionsController#home is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.2) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.2) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.2) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.3) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.3) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.3) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.3) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-06-22 11:07:04 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ArgumentError (Before process_action callback :redirect_if_not_logged_in has not been defined):
+  
+app/controllers/sessions_controller.rb:2:in `<class:SessionsController>'
+app/controllers/sessions_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2020-06-22 11:09:32 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#home as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 509)
+
+
+  
+ActionController::MissingExactTemplate (SessionsController#home is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.2) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.2) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.2) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.3) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.3) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.3) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.3) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-06-22 11:11:12 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  Rendered clips/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 88)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/sjordan/Desktop/twitch-clip-finder/public/packs
+[Webpacker] Hash: 15d1bb7b54cf6326b9ba
+Version: webpack 4.43.0
+Time: 1472ms
+Built at: 06/22/2020 11:11:15 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9afcbb5693aa87623e69.js    124 KiB  application  [emitted] [immutable]  application
+js/application-9afcbb5693aa87623e69.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9afcbb5693aa87623e69.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 3296ms (Views: 3295.4ms | ActiveRecord: 0.0ms | Allocations: 31430)
+
+
+Started GET "/" for ::1 at 2020-06-23 11:02:04 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  Rendered clips/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 339)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 36.7ms | ActiveRecord: 0.0ms | Allocations: 9729)
+
+
+Started GET "/" for ::1 at 2020-06-23 11:09:23 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#home as HTML
+Completed 406 Not Acceptable in 5ms (ActiveRecord: 0.0ms | Allocations: 1892)
+
+
+  
+ActionController::MissingExactTemplate (SessionsController#home is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.2) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.2) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.2) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.3) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.3) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.3) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.3) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-06-23 11:11:39 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#home as HTML
+  Rendering sessions/home.html.erb within layouts/application
+  Rendered sessions/home.html.erb within layouts/application (Duration: 11.5ms | Allocations: 242)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 5211)
+
+
+Started GET "/login" for ::1 at 2020-06-23 11:11:53 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 19.5ms | Allocations: 5244)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 25.5ms | ActiveRecord: 0.0ms | Allocations: 9422)
+
+
+Started GET "/login" for ::1 at 2020-06-23 11:12:10 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 436)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 4465)
+
+
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from load at /Users/sjordan/.rvm/gems/ruby-2.6.1/bin/rake:23)
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from load at /Users/sjordan/.rvm/gems/ruby-2.6.1/bin/rake:23)
+Started GET "/clips/new" for ::1 at 2020-06-23 11:24:14 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ClipsController#new as HTML
+  Rendering clips/new.html.erb within layouts/application
+  Rendered clips/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 87)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 5012)
+
+
+Started GET "/clips/new" for ::1 at 2020-06-23 11:30:06 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ClipsController#new as HTML
+  Rendering clips/new.html.erb within layouts/application
+  Rendered clips/new.html.erb within layouts/application (Duration: 10.4ms | Allocations: 3475)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.0ms | Allocations: 8338)
+
+
+Started GET "/clips/new" for ::1 at 2020-06-23 11:31:04 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ClipsController#new as HTML
+  Rendering clips/new.html.erb within layouts/application
+  Rendered clips/new.html.erb within layouts/application (Duration: 305.4ms | Allocations: 146974)
+Completed 500 Internal Server Error in 308ms (ActiveRecord: 0.0ms | Allocations: 148131)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `posts_path' for #<#<Class:0x00007fbb074ccd30>:0x00007fbb074d73e8>):
+    1: <h1>Add Clip</h1>
+    2: 
+    3: <%= form_for :clip, url: posts_path do |f| %>
+    4: <p>
+    5:   <%= f.label :title %><br>
+    6:   <%= f.text_field :title %>
+  
+app/views/clips/new.html.erb:3
+Started GET "/clips/new" for ::1 at 2020-06-23 11:32:55 -0400
+Processing by ClipsController#new as HTML
+  Rendering clips/new.html.erb within layouts/application
+  Rendered clips/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 695)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 5665)
+
+
+Started POST "/clips" for ::1 at 2020-06-23 11:33:16 -0400
+Processing by ClipsController#create as HTML
+  Parameters: {"authenticity_token"=>"3nezWGK/hWo73Cx/Tal3HaqddiP+/Dhh5glmACyJzYryV6SqV7SDiNIgGbs9at/QqhZPiVFGAi3IDHzQwNNgbg==", "clip"=>{"title"=>"WoW", "body"=>"This video"}, "commit"=>"Save Clip"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 616)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateClips (20200623153634)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "clips" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "url" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200623153634"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-06-23 15:37:18.990667"], ["updated_at", "2020-06-23 15:37:18.990667"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/clips" for ::1 at 2020-06-23 11:41:43 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ClipsController#create as HTML
+  Parameters: {"authenticity_token"=>"3nezWGK/hWo73Cx/Tal3HaqddiP+/Dhh5glmACyJzYryV6SqV7SDiNIgGbs9at/QqhZPiVFGAi3IDHzQwNNgbg==", "clip"=>{"title"=>"WoW", "body"=>"This video"}, "commit"=>"Save Clip"}
+[31mUnpermitted parameter: :body[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+  [1m[36mClip Create (0.5ms)[0m  [1m[32mINSERT INTO "clips" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "WoW"], ["created_at", "2020-06-23 15:41:43.439382"], ["updated_at", "2020-06-23 15:41:43.439382"]]
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+Redirected to http://localhost:3000/clips/1
+Completed 302 Found in 14ms (ActiveRecord: 2.0ms | Allocations: 6942)
+
+
+Started GET "/clips/1" for ::1 at 2020-06-23 11:41:43 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2417)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms | Allocations: 4548)
+
+
+  
+ActionView::Template::Error (undefined method `body' for #<Clip:0x00007fbb079381d0>):
+    1: <h2><%= @clip.title %></h2>
+    2: 
+    3: <p><%= @clip.body %></p>
+  
+app/views/clips/show.html.erb:3
+Started GET "/clips/1" for ::1 at 2020-06-23 11:42:04 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 118)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.2ms | Allocations: 5629)
+
+
+Started GET "/clips/new" for ::1 at 2020-06-23 11:42:34 -0400
+Processing by ClipsController#new as HTML
+  Rendering clips/new.html.erb within layouts/application
+  Rendered clips/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 698)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 5655)
+
+
+Started POST "/clips" for ::1 at 2020-06-23 11:42:45 -0400
+Processing by ClipsController#create as HTML
+  Parameters: {"authenticity_token"=>"nLEH1t6TJ4ss/OrxXjxMynuoBExsIjK2Cyy2UvKWtX+wkRAk65ghacUA3zUu/+QHeyM95sOYCPolKayCHswYmw==", "clip"=>{"title"=>"WoW 2", "url"=>"www.wow2.com"}, "commit"=>"Save Clip"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+  [1m[36mClip Create (0.5ms)[0m  [1m[32mINSERT INTO "clips" ("title", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "WoW 2"], ["url", "www.wow2.com"], ["created_at", "2020-06-23 15:42:45.607498"], ["updated_at", "2020-06-23 15:42:45.607498"]]
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+Redirected to http://localhost:3000/clips/2
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms | Allocations: 2595)
+
+
+Started GET "/clips/2" for ::1 at 2020-06-23 11:42:45 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 119)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.2ms | Allocations: 4836)
+
+
+Started GET "/clips/2" for ::1 at 2020-06-23 11:45:20 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 121)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 7.8ms | ActiveRecord: 0.8ms | Allocations: 9519)
+
+
+Started GET "/clips/2" for ::1 at 2020-06-23 11:45:21 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 10)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.2ms | Allocations: 4582)
+
+
+Started GET "/clips/index" for ::1 at 2020-06-23 11:45:27 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 1090)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Clip with 'id'=index):
+  
+app/controllers/clips_controller.rb:7:in `show'
+Started GET "/index" for ::1 at 2020-06-23 11:45:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.3) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.3) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.3) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.3) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/clips" for ::1 at 2020-06-23 11:45:36 -0400
+Processing by ClipsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2152)
+
+
+  
+NameError (uninitialized constant ClipsController::Post):
+  
+app/controllers/clips_controller.rb:3:in `index'
+Started GET "/clip" for ::1 at 2020-06-23 11:45:40 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/clip"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.3) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.3) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.3) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.3) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-06-23 11:45:47 -0400
+Processing by ClipsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2149)
+
+
+  
+NameError (uninitialized constant ClipsController::Post):
+  
+app/controllers/clips_controller.rb:3:in `index'
+Started GET "/" for ::1 at 2020-06-23 11:46:09 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 4285)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.8ms | Allocations: 8917)
+
+
+Started GET "/" for ::1 at 2020-06-23 11:48:37 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 776)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.2ms | Allocations: 6356)
+
+
+Started GET "/" for ::1 at 2020-06-23 11:58:11 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 3945)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 14.6ms | ActiveRecord: 0.2ms | Allocations: 9926)
+
+
+Started GET "/" for ::1 at 2020-06-23 11:58:12 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 629)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.2ms | Allocations: 5307)
+
+
+Started GET "/" for ::1 at 2020-06-23 11:58:24 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 628)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.1ms | Allocations: 5303)
+
+
+Started GET "/" for ::1 at 2020-06-23 11:58:27 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 628)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.1ms | Allocations: 5307)
+
+
+Started GET "/" for ::1 at 2020-06-23 11:58:30 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 628)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.2ms | Allocations: 5308)
+
+
+Started GET "/clips/new" for ::1 at 2020-06-23 11:58:38 -0400
+Processing by ClipsController#new as HTML
+  Rendering clips/new.html.erb within layouts/application
+  Rendered clips/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 694)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 5495)
+
+
+Started GET "/clips/new" for ::1 at 2020-06-23 12:01:39 -0400
+Processing by ClipsController#new as HTML
+  Rendering clips/new.html.erb within layouts/application
+  Rendered clips/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 694)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 6350)
+
+
+Started GET "/clips/new" for ::1 at 2020-06-23 12:03:00 -0400
+Processing by ClipsController#new as HTML
+  Rendering clips/new.html.erb within layouts/application
+  Rendered clips/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 694)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 6352)
+
+
+Started GET "/" for ::1 at 2020-06-23 12:03:29 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 771)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.2ms | Allocations: 5594)
+
+
+Started GET "/" for ::1 at 2020-06-23 12:06:27 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 776)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.2ms | Allocations: 6473)
+
+
+Started GET "/clips/new" for ::1 at 2020-06-23 12:06:31 -0400
+Processing by ClipsController#new as HTML
+  Rendering clips/new.html.erb within layouts/application
+  Rendered clips/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 725)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 5525)
+
+
+Started POST "/clips" for ::1 at 2020-06-23 12:08:50 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ClipsController#create as HTML
+  Parameters: {"authenticity_token"=>"wL2NIj7OyeUk5AeDCQ13UNviVkm2fhJGW9sWHH2GXRWVGV2eNGHtNQt6lqZru4NhSroQ0KUFBZ09DWL76CcbrA==", "clip"=>{"title"=>"Hi", "url"=>"www.hi.com"}, "commit"=>"Save Clip"}
+  Rendering clips/new.html.erb within layouts/application
+  Rendered clips/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 741)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 7.5ms | ActiveRecord: 1.0ms | Allocations: 10495)
+
+
+Started POST "/clips" for ::1 at 2020-06-23 12:14:10 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ClipsController#create as HTML
+  Parameters: {"authenticity_token"=>"/z6UBu54X6+ekZkCxVixuX/P1BYG6uQpcEBYJ7L4xe3THoP023NZTXdtrMa1mxl0f0TtvKlQ3mVeRUL3XqJoCQ==", "clip"=>{"title"=>"Hi", "url"=>"www.hi.com"}, "commit"=>"Save Clip"}
+  Rendering clips/new.html.erb within layouts/application
+  Rendered clips/new.html.erb within layouts/application (Duration: 268.7ms | Allocations: 147802)
+Completed 500 Internal Server Error in 273ms (ActiveRecord: 0.0ms | Allocations: 149866)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `clip' for #<#<Class:0x00007fbb0aa04598>:0x00007fbb0aa0e868>
+Did you mean?  @clip):
+    1: <h1>Add Clip</h1>
+    2: 
+    3: <%= form_for :clip, url: clips_path do |f| %>
+    4: <% if clip.errors.any? %>
+    5: <%  @post.errors.full_message.each do |msg| %>
+    6: <div class ="alert alert-danger"><%= msg %></div>
+    7: <% end %>
+  
+app/views/clips/new.html.erb:4
+app/views/clips/new.html.erb:3
+app/controllers/clips_controller.rb:21:in `create'
+Started POST "/clips" for ::1 at 2020-06-23 12:15:11 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ClipsController#create as HTML
+  Parameters: {"authenticity_token"=>"/z6UBu54X6+ekZkCxVixuX/P1BYG6uQpcEBYJ7L4xe3THoP023NZTXdtrMa1mxl0f0TtvKlQ3mVeRUL3XqJoCQ==", "clip"=>{"title"=>"Hi", "url"=>"www.hi.com"}, "commit"=>"Save Clip"}
+  Rendering clips/new.html.erb within layouts/application
+  Rendered clips/new.html.erb within layouts/application (Duration: 250.8ms | Allocations: 147518)
+Completed 500 Internal Server Error in 260ms (ActiveRecord: 0.7ms | Allocations: 152942)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `clip' for #<#<Class:0x00007fbb05b26520>:0x00007fbb05b24bd0>
+Did you mean?  @clip):
+    1: <h1>Add Clip</h1>
+    2: 
+    3: <%= form_for :clip, url: clips_path do |f| %>
+    4: <% if clip.errors.any? %>
+    5: <%  @post.errors.full_message.each do |msg| %>
+    6: <div class ="alert alert-danger"><%= msg %></div>
+    7: <% end %>
+  
+app/views/clips/new.html.erb:4
+app/views/clips/new.html.erb:3
+app/controllers/clips_controller.rb:21:in `create'
+Started GET "/clips" for ::1 at 2020-06-23 12:15:13 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 800)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.2ms | Allocations: 5927)
+
+
+Started GET "/clips/new" for ::1 at 2020-06-23 12:15:16 -0400
+Processing by ClipsController#new as HTML
+  Rendering clips/new.html.erb within layouts/application
+  Rendered clips/new.html.erb within layouts/application (Duration: 229.2ms | Allocations: 147169)
+Completed 500 Internal Server Error in 230ms (ActiveRecord: 0.0ms | Allocations: 147594)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `clip' for #<#<Class:0x00007fbb05b26520>:0x00007fbb0aa5f448>
+Did you mean?  @clip):
+    1: <h1>Add Clip</h1>
+    2: 
+    3: <%= form_for :clip, url: clips_path do |f| %>
+    4: <% if clip.errors.any? %>
+    5: <%  @post.errors.full_message.each do |msg| %>
+    6: <div class ="alert alert-danger"><%= msg %></div>
+    7: <% end %>
+  
+app/views/clips/new.html.erb:4
+app/views/clips/new.html.erb:3
+Started GET "/clips/new" for ::1 at 2020-06-23 12:16:44 -0400
+Processing by ClipsController#new as HTML
+  Rendering clips/new.html.erb within layouts/application
+  Rendered clips/new.html.erb within layouts/application (Duration: 223.4ms | Allocations: 147406)
+Completed 500 Internal Server Error in 226ms (ActiveRecord: 0.0ms | Allocations: 148570)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `clip' for #<#<Class:0x00007fbb0c011d90>:0x00007fbb0c010418>
+Did you mean?  @clip):
+    1: <h1>Add Clip</h1>
+    2: 
+    3: <%= form_for :clip, url: clips_path do |f| %>
+    4: <% if clip.errors.any? %>
+    5: <%  @clip.errors.full_message.each do |msg| %>
+    6: <div class ="alert alert-danger"><%= msg %></div>
+    7: <% end %>
+  
+app/views/clips/new.html.erb:4
+app/views/clips/new.html.erb:3
+Started GET "/clips/new" for ::1 at 2020-06-23 12:17:03 -0400
+Processing by ClipsController#new as HTML
+  Rendering clips/new.html.erb within layouts/application
+  Rendered clips/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 972)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 6659)
+
+
+Started POST "/clips" for ::1 at 2020-06-23 12:17:05 -0400
+Processing by ClipsController#create as HTML
+  Parameters: {"authenticity_token"=>"+xI1wyjhz8YEcKfCfBPlkLvWFBMRQYYStHlb+zIMD27XMiIxHerJJO2MkgYM0E1du10tub77vF6afEEr3laiig==", "clip"=>{"title"=>"", "url"=>""}, "commit"=>"Save Clip"}
+  Rendering clips/new.html.erb within layouts/application
+  Rendered clips/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 849)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2516)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 2)):
+    2: 
+    3: <%= form_for :clip, url: clips_path do |f| %>
+    4: <% if @clip.errors.any? %>
+    5: <%  @clip.errors.full_message.each do |msg| %>
+    6: <div class ="alert alert-danger"><%= msg %></div>
+    7: <% end %>
+    8: <% end %>
+  
+app/views/clips/new.html.erb:5
+app/views/clips/new.html.erb:3
+app/controllers/clips_controller.rb:21:in `create'
+Started POST "/clips" for ::1 at 2020-06-23 12:18:15 -0400
+Processing by ClipsController#create as HTML
+  Parameters: {"authenticity_token"=>"+xI1wyjhz8YEcKfCfBPlkLvWFBMRQYYStHlb+zIMD27XMiIxHerJJO2MkgYM0E1du10tub77vF6afEEr3laiig==", "clip"=>{"title"=>"", "url"=>""}, "commit"=>"Save Clip"}
+  Rendering clips/new.html.erb within layouts/application
+  Rendered clips/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1242)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 8027)
+
+
+Started GET "/" for ::1 at 2020-06-23 12:26:28 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 122.2ms | Allocations: 75937)
+Completed 500 Internal Server Error in 126ms (ActiveRecord: 0.2ms | Allocations: 77099)
+
+
+  
+ActionView::Template::Error (undefined method `post_path' for #<#<Class:0x00007fbb07572eb0>:0x00007fbb075712b8>
+Did you mean?  font_path):
+    3: <div class="well">
+    4: <h3><%= clip.title %></h3>
+    5: <p><%= clip.url %> </p>
+    6: <%= link_to "Watch", post_path(clip), :class => 'btn btn-default' %>
+    7: </div>
+    8: <% end %>
+  
+app/views/clips/index.html.erb:6
+app/views/clips/index.html.erb:2
+Started GET "/" for ::1 at 2020-06-23 12:26:49 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 876)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.2ms | Allocations: 6564)
+
+
+Started GET "/clips/1" for ::1 at 2020-06-23 12:27:07 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 117)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.2ms | Allocations: 5588)
+
+
+Started GET "/" for ::1 at 2020-06-23 12:33:06 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.3ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 4067)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 14.2ms | ActiveRecord: 0.3ms | Allocations: 10140)
+
+
+Started GET "/clips/1" for ::1 at 2020-06-23 12:33:07 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 190)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 0.2ms | Allocations: 5647)
+
+
+Started GET "/clips/1/edit" for ::1 at 2020-06-23 12:33:08 -0400
+Processing by ClipsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:26:in `edit'
+  Rendering clips/edit.html.erb within layouts/application
+  Rendered clips/edit.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1065)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 6408)
+
+
+Started GET "/clips/1/edit" for ::1 at 2020-06-23 12:37:49 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ClipsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:26:in `edit'
+  Rendering clips/edit.html.erb within layouts/application
+  Rendered clips/edit.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1060)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 10.3ms | ActiveRecord: 0.8ms | Allocations: 11267)
+
+
+Started PATCH "/clips/1" for ::1 at 2020-06-23 12:37:57 -0400
+Processing by ClipsController#update as HTML
+  Parameters: {"authenticity_token"=>"D3rcIs2pzx7hQOzV/rs98X97nW0XzCyQszUj3NkfQrMjWsvQ+KLJ/Ai82RGOeJU8f/Ckx7h2FtydMDkMNUXvVw==", "clip"=>{"title"=>"WoW", "url"=>"www.wow1.com"}, "commit"=>"Save Clip", "id"=>"1"}
+  [1m[36mClip Load (0.3ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:30:in `update'
+Completed 500 Internal Server Error in 182ms (ActiveRecord: 0.3ms | Allocations: 98948)
+
+
+  
+NameError (undefined local variable or method `clip_params' for #<ClipsController:0x00007fbb0629ab30>
+Did you mean?  clip_path):
+  
+app/controllers/clips_controller.rb:31:in `update'
+Started GET "/" for ::1 at 2020-06-23 12:39:49 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 891)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.2ms | Allocations: 5705)
+
+
+Started GET "/clips/1" for ::1 at 2020-06-23 12:39:51 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 187)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.2ms | Allocations: 5531)
+
+
+Started GET "/clips/1/edit" for ::1 at 2020-06-23 12:39:53 -0400
+Processing by ClipsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:26:in `edit'
+  Rendering clips/edit.html.erb within layouts/application
+  Rendered clips/edit.html.erb within layouts/application (Duration: 1.1ms | Allocations: 721)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.2ms | Allocations: 5922)
+
+
+Started PATCH "/clips/1" for ::1 at 2020-06-23 12:40:00 -0400
+Processing by ClipsController#update as HTML
+  Parameters: {"authenticity_token"=>"j3TqbPTDf8BIMPN9cTNxDc5BMsHLS1IE5FWybmCJwczJUJzoGV7XQo4fKiBejDCq8t28gQRXTZd82PpYqq0XoA==", "clip"=>{"title"=>"WoW", "url"=>"hello"}, "commit"=>"Save Clip", "id"=>"1"}
+  [1m[36mClip Load (0.3ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:30:in `update'
+Completed 500 Internal Server Error in 180ms (ActiveRecord: 0.3ms | Allocations: 98974)
+
+
+  
+NameError (undefined local variable or method `clip_params' for #<ClipsController:0x00007fbb079eeac0>
+Did you mean?  clip_path):
+  
+app/controllers/clips_controller.rb:31:in `update'
+Started GET "/clips/1" for ::1 at 2020-06-23 12:40:03 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 52)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 5251)
+
+
+Started GET "/" for ::1 at 2020-06-23 12:40:03 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 706)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.2ms | Allocations: 5371)
+
+
+Started GET "/clips/2" for ::1 at 2020-06-23 12:40:05 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.1ms | Allocations: 5251)
+
+
+Started GET "/clips/2/edit" for ::1 at 2020-06-23 12:40:06 -0400
+Processing by ClipsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:26:in `edit'
+  Rendering clips/edit.html.erb within layouts/application
+  Rendered clips/edit.html.erb within layouts/application (Duration: 1.2ms | Allocations: 721)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.2ms | Allocations: 5918)
+
+
+Started PATCH "/clips/2" for ::1 at 2020-06-23 12:40:09 -0400
+Processing by ClipsController#update as HTML
+  Parameters: {"authenticity_token"=>"65sAI0KBPJzMUd2//cvhIWvEFqjcPeNkLnCmNJe3Zr6jnDkLvzsnp7xC+xdDR+SrsFaTFjPGhSi+u52u7IDxNw==", "clip"=>{"title"=>"WoW 2", "url"=>"www.wow21.com"}, "commit"=>"Save Clip", "id"=>"2"}
+  [1m[36mClip Load (0.3ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:30:in `update'
+Completed 500 Internal Server Error in 184ms (ActiveRecord: 0.3ms | Allocations: 98985)
+
+
+  
+NameError (undefined local variable or method `clip_params' for #<ClipsController:0x00007fbb0a9bf2e0>
+Did you mean?  clip_path):
+  
+app/controllers/clips_controller.rb:31:in `update'
+Started GET "/" for ::1 at 2020-06-23 12:46:28 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 4050)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.2ms | Allocations: 10133)
+
+
+Started GET "/clips/new" for ::1 at 2020-06-23 12:46:33 -0400
+Processing by ClipsController#new as HTML
+  Rendering clips/new.html.erb within layouts/application
+  Rendered clips/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1020)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.0ms | Allocations: 5834)
+
+
+Started POST "/clips" for ::1 at 2020-06-23 12:46:43 -0400
+Processing by ClipsController#create as HTML
+  Parameters: {"authenticity_token"=>"8TzSgj3EaqI23WBVpEJzZERbW0lCKyaxsQ5gFWpkG7ikmAI+N2tOchlD8XDG9IdV1QMd0FFQMWrX2BTy/8VdAQ==", "clip"=>{"title"=>"Starcraft", "url"=>"www.starcraft.com"}, "commit"=>"Save Clip"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+  [1m[36mClip Create (0.6ms)[0m  [1m[32mINSERT INTO "clips" ("title", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Starcraft"], ["url", "www.starcraft.com"], ["created_at", "2020-06-23 16:46:43.530876"], ["updated_at", "2020-06-23 16:46:43.530876"]]
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+Redirected to http://localhost:3000/clips/3
+Completed 302 Found in 5ms (ActiveRecord: 1.7ms | Allocations: 2706)
+
+
+Started GET "/clips/3" for ::1 at 2020-06-23 12:46:43 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 280)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.2ms | Allocations: 5741)
+
+
+Started GET "/" for ::1 at 2020-06-23 12:46:56 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 757)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.1ms | Allocations: 5423)
+
+
+Started GET "/clips/3" for ::1 at 2020-06-23 12:46:59 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.2ms | Allocations: 5304)
+
+
+Started DELETE "/clips/3" for ::1 at 2020-06-23 12:47:09 -0400
+Processing by ClipsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2bnB+X8Fd+AxhBZg7miIynemZwVgBj705xPKBmmpNA31mdYLSg5xAth4I6SeqyAHdy1er8+8BLjJFtDWhfOZ6Q==", "id"=>"3"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:39:in `destroy'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 1515)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/clips_controller.rb:40:in `destroy'
+Started GET "/clips/3/edit" for ::1 at 2020-06-23 12:47:37 -0400
+Processing by ClipsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:26:in `edit'
+  Rendering clips/edit.html.erb within layouts/application
+  Rendered clips/edit.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1006)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 0.2ms | Allocations: 6353)
+
+
+Started PATCH "/clips/3" for ::1 at 2020-06-23 12:47:41 -0400
+Processing by ClipsController#update as HTML
+  Parameters: {"authenticity_token"=>"Xgp+5cvIqhfJzo2T9fOuYVcQXxdMHjPBJIHoWZAXGPGOlEOF7B2gQC49Qe2VH9uFfj66iTJRNXsRZXc/1mk24Q==", "clip"=>{"title"=>"Starcraft", "url"=>"www.starcraft1.com"}, "commit"=>"Save Clip", "id"=>"3"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:30:in `update'
+Completed 500 Internal Server Error in 179ms (ActiveRecord: 0.2ms | Allocations: 98991)
+
+
+  
+NameError (undefined local variable or method `clip_params' for #<ClipsController:0x00007fbb05bacb98>
+Did you mean?  clip_path):
+  
+app/controllers/clips_controller.rb:31:in `update'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateReviews (20200623165409)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "body" text, "clip_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_b446291aef"
+FOREIGN KEY ("clip_id")
+  REFERENCES "clips" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_reviews_on_clip_id" ON "reviews" ("clip_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200623165409"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/clips/3/edit" for ::1 at 2020-06-23 13:20:54 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ClipsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mClip Load (0.5ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:26:in `edit'
+  Rendering clips/edit.html.erb within layouts/application
+  Rendered clips/edit.html.erb within layouts/application (Duration: 2.4ms | Allocations: 783)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 17.8ms | ActiveRecord: 0.5ms | Allocations: 10864)
+
+
+Started GET "/clips/3/edit" for ::1 at 2020-06-23 13:21:00 -0400
+Processing by ClipsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:26:in `edit'
+  Rendering clips/edit.html.erb within layouts/application
+  Rendered clips/edit.html.erb within layouts/application (Duration: 2.0ms | Allocations: 721)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.2ms | Allocations: 5918)
+
+
+Started GET "/" for ::1 at 2020-06-23 13:21:01 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 772)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.2ms | Allocations: 5442)
+
+
+Started GET "/" for ::1 at 2020-06-23 13:21:42 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 757)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.2ms | Allocations: 5424)
+
+
+Started GET "/clips/new" for ::1 at 2020-06-23 13:21:44 -0400
+Processing by ClipsController#new as HTML
+  Rendering clips/new.html.erb within layouts/application
+  Rendered clips/new.html.erb within layouts/application (Duration: 22.9ms | Allocations: 685)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms | Allocations: 5366)
+
+
+Started POST "/clips" for ::1 at 2020-06-23 13:21:54 -0400
+Processing by ClipsController#create as HTML
+  Parameters: {"authenticity_token"=>"mQYEkeIk8plWwCZmPBf1DpOz/KWzlFVKqR6z3lH0n4DMotQt6IvWSXlet0NeoQE/Auu6PKDvQpHPyMc5xFXZOQ==", "clip"=>{"title"=>"Dan's video", "url"=>"www.thedanimal.com\r\n"}, "commit"=>"Save Clip"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+  [1m[36mClip Create (1.4ms)[0m  [1m[32mINSERT INTO "clips" ("title", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Dan's video"], ["url", "www.thedanimal.com\r\n"], ["created_at", "2020-06-23 17:21:54.066180"], ["updated_at", "2020-06-23 17:21:54.066180"]]
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+Redirected to http://localhost:3000/clips/4
+Completed 302 Found in 7ms (ActiveRecord: 2.6ms | Allocations: 2816)
+
+
+Started GET "/clips/4" for ::1 at 2020-06-23 13:21:54 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mClip Load (0.3ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 112)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.3ms | Allocations: 5307)
+
+
+Started DELETE "/clips/4" for ::1 at 2020-06-23 13:21:59 -0400
+Processing by ClipsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WXgtcV6Ppmkf0iHvra5IumoePSC9ROMepqmJygjrEv91WDqDa4Sgi/YuFCvdbeB3apUEihL+2VKIrJMa5LG/Gw==", "id"=>"4"}
+  [1m[36mClip Load (0.4ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:39:in `destroy'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms | Allocations: 1513)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/clips_controller.rb:40:in `destroy'
+Started GET "/clips/4/edit" for ::1 at 2020-06-23 13:22:02 -0400
+Processing by ClipsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mClip Load (0.3ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:26:in `edit'
+  Rendering clips/edit.html.erb within layouts/application
+  Rendered clips/edit.html.erb within layouts/application (Duration: 3.1ms | Allocations: 721)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.3ms | Allocations: 5926)
+
+
+Started PATCH "/clips/4" for ::1 at 2020-06-23 13:22:05 -0400
+Processing by ClipsController#update as HTML
+  Parameters: {"authenticity_token"=>"cqOhN2vKbdgiNBrYtyay1xsDLWaowTSKxo3D09mzck1vE0Sa7+owpU8b2HTJfqc/scumHNUzT0EAucofmoMjdw==", "clip"=>{"title"=>"Dan's video", "url"=>"www.thedanimal1.com\r\n"}, "commit"=>"Save Clip", "id"=>"4"}
+  [1m[36mClip Load (0.3ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:30:in `update'
+Completed 500 Internal Server Error in 264ms (ActiveRecord: 0.3ms | Allocations: 98985)
+
+
+  
+NameError (undefined local variable or method `clip_params' for #<ClipsController:0x00007fbb05b86858>
+Did you mean?  clip_path):
+  
+app/controllers/clips_controller.rb:31:in `update'
+Started GET "/clips/4" for ::1 at 2020-06-23 13:22:08 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.2ms | Allocations: 5312)
+
+
+Started GET "/clips/4" for ::1 at 2020-06-23 13:22:10 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.2ms | Allocations: 5309)
+
+
+Started GET "/clips/4" for ::1 at 2020-06-23 13:22:11 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mClip Load (0.3ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.3ms | Allocations: 5307)
+
+
+Started GET "/" for ::1 at 2020-06-23 13:22:13 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.3ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 809)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.3ms | Allocations: 5479)
+
+
+Started GET "/clips/4" for ::1 at 2020-06-23 13:22:27 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.2ms | Allocations: 5310)
+
+
+Started DELETE "/clips/4" for ::1 at 2020-06-23 13:22:31 -0400
+Processing by ClipsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RgUfsyu7RITc1dQruVyTvYj47fIsqxTEdUwdbZAKndJqJQhBHrBCZjUp4e/JnztwiHPUWIMRLohbSQe9fFAwNg==", "id"=>"4"}
+  [1m[36mClip Load (0.5ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:39:in `destroy'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms | Allocations: 1509)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/clips_controller.rb:40:in `destroy'
+Started GET "/clips/new" for ::1 at 2020-06-23 13:23:03 -0400
+Processing by ClipsController#new as HTML
+  Rendering clips/new.html.erb within layouts/application
+  Rendered clips/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 684)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 5359)
+
+
+Started POST "/clips" for ::1 at 2020-06-23 13:23:08 -0400
+Processing by ClipsController#create as HTML
+  Parameters: {"authenticity_token"=>"5ucFsrHRkoMhWfuerOtFSBcJ+Nyza/9jv4ZSSHRPt8azQ9UOu362Uw7HarvOXbF5hlG+RaAQ6LjZUCav4e7xfw==", "clip"=>{"title"=>"hi", "url"=>""}, "commit"=>"Save Clip"}
+  Rendering clips/new.html.erb within layouts/application
+  Rendered clips/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 824)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 6349)
+
+
+Started POST "/clips" for ::1 at 2020-06-23 13:24:06 -0400
+Processing by ClipsController#create as HTML
+  Parameters: {"authenticity_token"=>"wR2bBcYzZ+I2QlgccfjNFaAEmnGeVVp3nRLWPrvJ5aftPYz38zhhAN++bdgBO2XYoI+j2zHvYDuzF8zuV5NIQw==", "clip"=>{"title"=>"hello", "url"=>"www.hello.com"}, "commit"=>"Save Clip"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+  [1m[36mClip Create (0.8ms)[0m  [1m[32mINSERT INTO "clips" ("title", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "hello"], ["url", "www.hello.com"], ["created_at", "2020-06-23 17:24:06.006974"], ["updated_at", "2020-06-23 17:24:06.006974"]]
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+Redirected to http://localhost:3000/clips/5
+Completed 302 Found in 9ms (ActiveRecord: 2.3ms | Allocations: 2638)
+
+
+Started GET "/clips/5" for ::1 at 2020-06-23 13:24:06 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.2ms | Allocations: 5309)
+
+
+Started GET "/clips/5" for ::1 at 2020-06-24 11:16:46 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mClip Load (0.5ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 24.0ms | ActiveRecord: 0.5ms | Allocations: 5338)
+
+
+Started GET "/" for ::1 at 2020-06-24 11:16:49 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.3ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 877)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.3ms | Allocations: 5551)
+
+
+Started GET "/clips/new" for ::1 at 2020-06-24 11:17:13 -0400
+Processing by ClipsController#new as HTML
+  Rendering clips/new.html.erb within layouts/application
+  Rendered clips/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 684)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 5354)
+
+
+Started POST "/clips" for ::1 at 2020-06-24 11:17:22 -0400
+Processing by ClipsController#create as HTML
+  Parameters: {"authenticity_token"=>"Ux1+K42JEGiil2QP+iMKnX9RM+GdYeXxrxJn42SMzOsGua6XhyY0uI0J9SqYlf6s7gl1eI4a8irJxBME8S2KUg==", "clip"=>{"title"=>"title", "url"=>"www.url.com"}, "commit"=>"Save Clip"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+  [1m[36mClip Create (0.9ms)[0m  [1m[32mINSERT INTO "clips" ("title", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "title"], ["url", "www.url.com"], ["created_at", "2020-06-24 15:17:22.197825"], ["updated_at", "2020-06-24 15:17:22.197825"]]
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+Redirected to http://localhost:3000/clips/6
+Completed 302 Found in 10ms (ActiveRecord: 2.1ms | Allocations: 2667)
+
+
+Started GET "/clips/6" for ::1 at 2020-06-24 11:17:22 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mClip Load (0.4ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 10.2ms | ActiveRecord: 0.4ms | Allocations: 5311)
+
+
+Started DELETE "/clips/6" for ::1 at 2020-06-24 11:17:30 -0400
+Processing by ClipsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"X3F8u0hk1G8LHMwyYvsy0uuuE2K6bKVqtfzkgqibwjJzUWtJfW/SjeLg+fYSOJof6yUqyBXWnyab+f5SRMFv1g==", "id"=>"6"}
+  [1m[36mClip Load (0.3ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:39:in `destroy'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms | Allocations: 1514)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/clips_controller.rb:40:in `destroy'
+Started GET "/" for ::1 at 2020-06-29 11:36:39 -0400
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.5ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 5064)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 72ms (Views: 49.9ms | ActiveRecord: 1.0ms | Allocations: 17345)
+
+
+Started GET "/clips/1" for ::1 at 2020-06-29 11:36:42 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 281)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 11.3ms | ActiveRecord: 0.2ms | Allocations: 6443)
+
+
+Started GET "/clips/1/edit" for ::1 at 2020-06-29 11:36:43 -0400
+Processing by ClipsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:26:in `edit'
+  Rendering clips/edit.html.erb within layouts/application
+  Rendered clips/edit.html.erb within layouts/application (Duration: 29.5ms | Allocations: 5208)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 38.1ms | ActiveRecord: 0.2ms | Allocations: 10566)
+
+
+Started PATCH "/clips/1" for ::1 at 2020-06-29 11:36:49 -0400
+Processing by ClipsController#update as HTML
+  Parameters: {"authenticity_token"=>"E+Yu1Q2QdGxRB3ML9d6JsXXIdKLhCNzap47YVYGiV5m4JAFbUH4C8QuOUki/Pquc4Q5Y4NHX1YXQydbCw3iSiA==", "clip"=>{"title"=>"WoW", "url"=>"www.url.com"}, "commit"=>"Save Clip", "id"=>"1"}
+  [1m[36mClip Load (0.3ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:30:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clips_controller.rb:31:in `update'
+  [1m[36mClip Update (0.6ms)[0m  [1m[33mUPDATE "clips" SET "url" = ?, "updated_at" = ? WHERE "clips"."id" = ?[0m  [["url", "www.url.com"], ["updated_at", "2020-06-29 15:36:49.100998"], ["id", 1]]
+  ↳ app/controllers/clips_controller.rb:31:in `update'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clips_controller.rb:31:in `update'
+Redirected to http://localhost:3000/clips/1
+Completed 302 Found in 33ms (ActiveRecord: 1.9ms | Allocations: 3669)
+
+
+Started GET "/clips/1" for ::1 at 2020-06-29 11:36:49 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 111)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.2ms | Allocations: 5319)
+
+
+Started DELETE "/clips/1" for ::1 at 2020-06-29 11:39:56 -0400
+Processing by ClipsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"esHr5l8NM+xNjiH+9/TCR10LX6mQ/R8L4oBIUhOvE2VnHFQTHiJ6VBhNf3cVI/ShCXoZYu/jVzsONbQt0SxcgA==", "id"=>"1"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:39:in `destroy'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms | Allocations: 1520)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/clips_controller.rb:40:in `destroy'
+Started DELETE "/clips/1" for ::1 at 2020-06-29 11:42:12 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ClipsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"esHr5l8NM+xNjiH+9/TCR10LX6mQ/R8L4oBIUhOvE2VnHFQTHiJ6VBhNf3cVI/ShCXoZYu/jVzsONbQt0SxcgA==", "id"=>"1"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:39:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clips_controller.rb:40:in `destroy'
+  [1m[36mClip Destroy (0.7ms)[0m  [1m[31mDELETE FROM "clips" WHERE "clips"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/clips_controller.rb:40:in `destroy'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clips_controller.rb:40:in `destroy'
+Redirected to http://localhost:3000/clips
+Completed 302 Found in 12ms (ActiveRecord: 2.3ms | Allocations: 7355)
+
+
+Started GET "/clips" for ::1 at 2020-06-29 11:42:12 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 887)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.2ms | Allocations: 5747)
+
+
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from load at /Users/sjordan/.rvm/gems/ruby-2.6.1/bin/rake:23)
+Started GET "/clips/2" for ::1 at 2020-06-29 11:53:26 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1139)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms | Allocations: 7030)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h2><%= @clip.title %></h2>
+
+<p><%= @clip.url %></p>
+<hr>
+<%= link_to "Edit", edit_clip_path(@clip), :class => 'btn btn-default' %>
+<%= link_to "Delete", clip_path(@clip),
+method: :delete,
+data: {confirm: 'Are you sure?'},
+ :class => 'btn btn-danger' %>
+
+<hr>
+<h3>Add Review</h3>
+<%= form_for([@clip, @clip.reviews.build]) do |f| %>
+<p>
+  <%= f.label :username %> <br>
+  <%= f.text_field(:username, {:class => 'form-control'}) %>
+</p>
+<p>
+  <%= f.label :body %> <br>
+  <%= f.text_area(:body, {:class => 'form-control'}) %>
+</p>
+<p>
+  <%= f.submit({:class = > 'btn btn-default'}) %>
+</p>
+<% end %>
+
+):
+1:    <h2><%= @clip.title %></h2>
+2:    
+3:    <p><%= @clip.url %></p>
+4:    <hr>
+5:    <%= link_to "Edit", edit_clip_path(@clip), :class => 'btn btn-default' %>
+6:    <%= link_to "Delete", clip_path(@clip),
+7:    method: :delete,
+8:    data: {confirm: 'Are you sure?'},
+9:     :class => 'btn btn-danger' %>
+10:    
+11:    <hr>
+12:    <h3>Add Review</h3>
+13:    <%= form_for([@clip, @clip.reviews.build]) do |f| %>
+14:    <p>
+15:      <%= f.label :username %> <br>
+16:      <%= f.text_field(:username, {:class => 'form-control'}) %>
+17:    </p>
+18:    <p>
+19:      <%= f.label :body %> <br>
+20:      <%= f.text_area(:body, {:class => 'form-control'}) %>
+21:    </p>
+22:    <p>
+23:      <%= f.submit({:class = > 'btn btn-default'}) %>
+24:    </p>
+25:    <% end %>
+  
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:27: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:27: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:27: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:27: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:27: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:27: syntax error, unexpected end, expecting ')'
+Started GET "/clips" for ::1 at 2020-06-29 11:54:57 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.4ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1052)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.4ms | Allocations: 6132)
+
+
+Started GET "/clips/1" for ::1 at 2020-06-29 11:54:58 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+Completed 404 Not Found in 8ms (ActiveRecord: 0.1ms | Allocations: 1102)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Clip with 'id'=1):
+  
+app/controllers/clips_controller.rb:7:in `show'
+Started GET "/" for ::1 at 2020-06-29 11:55:01 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 864)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.1ms | Allocations: 5539)
+
+
+Started GET "/clips/2" for ::1 at 2020-06-29 11:55:02 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1167)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms | Allocations: 2120)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h2><%= @clip.title %></h2>
+
+<p><%= @clip.url %></p>
+<hr>
+<%= link_to "Edit", edit_clip_path(@clip), :class => 'btn btn-default' %>
+<%= link_to "Delete", clip_path(@clip),
+method: :delete,
+data: {confirm: 'Are you sure?'},
+ :class => 'btn btn-danger' %>
+
+<hr>
+<h3>Add Review</h3>
+<%= form_for([@clip, @clip.reviews.build]) do |f| %>
+<p>
+  <%= f.label :username %> <br>
+  <%= f.text_field(:username, {:class => 'form-control'}) %>
+</p>
+<p>
+  <%= f.label :body %> <br>
+  <%= f.text_area(:body, {:class => 'form-control'}) %>
+</p>
+<p>
+  <%= f.submit({:class = > 'btn btn-default'}) %>
+</p>
+<% end %>
+
+):
+1:    <h2><%= @clip.title %></h2>
+2:    
+3:    <p><%= @clip.url %></p>
+4:    <hr>
+5:    <%= link_to "Edit", edit_clip_path(@clip), :class => 'btn btn-default' %>
+6:    <%= link_to "Delete", clip_path(@clip),
+7:    method: :delete,
+8:    data: {confirm: 'Are you sure?'},
+9:     :class => 'btn btn-danger' %>
+10:    
+11:    <hr>
+12:    <h3>Add Review</h3>
+13:    <%= form_for([@clip, @clip.reviews.build]) do |f| %>
+14:    <p>
+15:      <%= f.label :username %> <br>
+16:      <%= f.text_field(:username, {:class => 'form-control'}) %>
+17:    </p>
+18:    <p>
+19:      <%= f.label :body %> <br>
+20:      <%= f.text_area(:body, {:class => 'form-control'}) %>
+21:    </p>
+22:    <p>
+23:      <%= f.submit({:class = > 'btn btn-default'}) %>
+24:    </p>
+25:    <% end %>
+  
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:27: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:27: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:27: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:27: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:27: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:27: syntax error, unexpected end, expecting ')'
+Started GET "/clips/2" for ::1 at 2020-06-29 11:55:32 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1185)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms | Allocations: 2878)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h2><%= @clip.title %></h2>
+
+<p><%= @clip.url %></p>
+<hr>
+<%= link_to "Edit", edit_clip_path(@clip), :class => 'btn btn-default' %>
+<%= link_to "Delete", clip_path(@clip),
+method: :delete,
+data: {confirm: 'Are you sure?'},
+ :class => 'btn btn-danger' %>
+
+<!-- <hr>
+<h3>Add Review</h3>
+<%= form_for([@clip, @clip.reviews.build]) do |f| %>
+<p>
+  <%= f.label :username %> <br>
+  <%= f.text_field(:username, {:class => 'form-control'}) %>
+</p>
+<p>
+  <%= f.label :body %> <br>
+  <%= f.text_area(:body, {:class => 'form-control'}) %>
+</p>
+<p>
+  <%= f.submit({:class = > 'btn btn-default'}) %>
+</p>
+<% end %> -->
+
+):
+1:    <h2><%= @clip.title %></h2>
+2:    
+3:    <p><%= @clip.url %></p>
+4:    <hr>
+5:    <%= link_to "Edit", edit_clip_path(@clip), :class => 'btn btn-default' %>
+6:    <%= link_to "Delete", clip_path(@clip),
+7:    method: :delete,
+8:    data: {confirm: 'Are you sure?'},
+9:     :class => 'btn btn-danger' %>
+10:    
+11:    <!-- <hr>
+12:    <h3>Add Review</h3>
+13:    <%= form_for([@clip, @clip.reviews.build]) do |f| %>
+14:    <p>
+15:      <%= f.label :username %> <br>
+16:      <%= f.text_field(:username, {:class => 'form-control'}) %>
+17:    </p>
+18:    <p>
+19:      <%= f.label :body %> <br>
+20:      <%= f.text_area(:body, {:class => 'form-control'}) %>
+21:    </p>
+22:    <p>
+23:      <%= f.submit({:class = > 'btn btn-default'}) %>
+24:    </p>
+25:    <% end %> -->
+  
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:28: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:28: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:28: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:28: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:28: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:28: syntax error, unexpected end, expecting ')'
+Started GET "/" for ::1 at 2020-06-29 11:55:37 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1033)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.1ms | Allocations: 6119)
+
+
+Started GET "/clips/2" for ::1 at 2020-06-29 11:55:39 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1171)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms | Allocations: 2120)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h2><%= @clip.title %></h2>
+
+<p><%= @clip.url %></p>
+<hr>
+<%= link_to "Edit", edit_clip_path(@clip), :class => 'btn btn-default' %>
+<%= link_to "Delete", clip_path(@clip),
+method: :delete,
+data: {confirm: 'Are you sure?'},
+ :class => 'btn btn-danger' %>
+
+<!-- <hr>
+<h3>Add Review</h3>
+<%= form_for([@clip, @clip.reviews.build]) do |f| %>
+<p>
+  <%= f.label :username %> <br>
+  <%= f.text_field(:username, {:class => 'form-control'}) %>
+</p>
+<p>
+  <%= f.label :body %> <br>
+  <%= f.text_area(:body, {:class => 'form-control'}) %>
+</p>
+<p>
+  <%= f.submit({:class = > 'btn btn-default'}) %>
+</p>
+<% end %> -->
+
+):
+1:    <h2><%= @clip.title %></h2>
+2:    
+3:    <p><%= @clip.url %></p>
+4:    <hr>
+5:    <%= link_to "Edit", edit_clip_path(@clip), :class => 'btn btn-default' %>
+6:    <%= link_to "Delete", clip_path(@clip),
+7:    method: :delete,
+8:    data: {confirm: 'Are you sure?'},
+9:     :class => 'btn btn-danger' %>
+10:    
+11:    <!-- <hr>
+12:    <h3>Add Review</h3>
+13:    <%= form_for([@clip, @clip.reviews.build]) do |f| %>
+14:    <p>
+15:      <%= f.label :username %> <br>
+16:      <%= f.text_field(:username, {:class => 'form-control'}) %>
+17:    </p>
+18:    <p>
+19:      <%= f.label :body %> <br>
+20:      <%= f.text_area(:body, {:class => 'form-control'}) %>
+21:    </p>
+22:    <p>
+23:      <%= f.submit({:class = > 'btn btn-default'}) %>
+24:    </p>
+25:    <% end %> -->
+  
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:28: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:28: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:28: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:28: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:28: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:28: syntax error, unexpected end, expecting ')'
+Started GET "/clips/2" for ::1 at 2020-06-29 11:56:26 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1185)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms | Allocations: 2875)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h2><%= @clip.title %></h2>
+
+<p><%= @clip.body %></p>
+<hr>
+<%= link_to "Edit", edit_clip_path(@clip), :class => 'btn btn-default' %>
+<%= link_to "Delete", clip_path(@clip),
+method: :delete,
+data: {confirm: 'Are you sure?'},
+ :class => 'btn btn-danger' %>
+
+<!-- <hr>
+<h3>Add Review</h3>
+<%= form_for([@clip, @clip.reviews.build]) do |f| %>
+<p>
+  <%= f.label :username %> <br>
+  <%= f.text_field(:username, {:class => 'form-control'}) %>
+</p>
+<p>
+  <%= f.label :body %> <br>
+  <%= f.text_area(:body, {:class => 'form-control'}) %>
+</p>
+<p>
+  <%= f.submit({:class = > 'btn btn-default'}) %>
+</p>
+<% end %> -->
+
+):
+1:    <h2><%= @clip.title %></h2>
+2:    
+3:    <p><%= @clip.body %></p>
+4:    <hr>
+5:    <%= link_to "Edit", edit_clip_path(@clip), :class => 'btn btn-default' %>
+6:    <%= link_to "Delete", clip_path(@clip),
+7:    method: :delete,
+8:    data: {confirm: 'Are you sure?'},
+9:     :class => 'btn btn-danger' %>
+10:    
+11:    <!-- <hr>
+12:    <h3>Add Review</h3>
+13:    <%= form_for([@clip, @clip.reviews.build]) do |f| %>
+14:    <p>
+15:      <%= f.label :username %> <br>
+16:      <%= f.text_field(:username, {:class => 'form-control'}) %>
+17:    </p>
+18:    <p>
+19:      <%= f.label :body %> <br>
+20:      <%= f.text_area(:body, {:class => 'form-control'}) %>
+21:    </p>
+22:    <p>
+23:      <%= f.submit({:class = > 'btn btn-default'}) %>
+24:    </p>
+25:    <% end %> -->
+  
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:28: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:28: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:28: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:28: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:28: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:28: syntax error, unexpected end, expecting ')'
+Started GET "/" for ::1 at 2020-06-29 11:56:30 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1032)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.1ms | Allocations: 6111)
+
+
+Started GET "/clips/3" for ::1 at 2020-06-29 11:56:32 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1171)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms | Allocations: 2125)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h2><%= @clip.title %></h2>
+
+<p><%= @clip.body %></p>
+<hr>
+<%= link_to "Edit", edit_clip_path(@clip), :class => 'btn btn-default' %>
+<%= link_to "Delete", clip_path(@clip),
+method: :delete,
+data: {confirm: 'Are you sure?'},
+ :class => 'btn btn-danger' %>
+
+<!-- <hr>
+<h3>Add Review</h3>
+<%= form_for([@clip, @clip.reviews.build]) do |f| %>
+<p>
+  <%= f.label :username %> <br>
+  <%= f.text_field(:username, {:class => 'form-control'}) %>
+</p>
+<p>
+  <%= f.label :body %> <br>
+  <%= f.text_area(:body, {:class => 'form-control'}) %>
+</p>
+<p>
+  <%= f.submit({:class = > 'btn btn-default'}) %>
+</p>
+<% end %> -->
+
+):
+1:    <h2><%= @clip.title %></h2>
+2:    
+3:    <p><%= @clip.body %></p>
+4:    <hr>
+5:    <%= link_to "Edit", edit_clip_path(@clip), :class => 'btn btn-default' %>
+6:    <%= link_to "Delete", clip_path(@clip),
+7:    method: :delete,
+8:    data: {confirm: 'Are you sure?'},
+9:     :class => 'btn btn-danger' %>
+10:    
+11:    <!-- <hr>
+12:    <h3>Add Review</h3>
+13:    <%= form_for([@clip, @clip.reviews.build]) do |f| %>
+14:    <p>
+15:      <%= f.label :username %> <br>
+16:      <%= f.text_field(:username, {:class => 'form-control'}) %>
+17:    </p>
+18:    <p>
+19:      <%= f.label :body %> <br>
+20:      <%= f.text_area(:body, {:class => 'form-control'}) %>
+21:    </p>
+22:    <p>
+23:      <%= f.submit({:class = > 'btn btn-default'}) %>
+24:    </p>
+25:    <% end %> -->
+  
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:28: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:28: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:28: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:28: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:28: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:28: syntax error, unexpected end, expecting ')'
+Started GET "/clips/3" for ::1 at 2020-06-29 12:17:59 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mClip Load (0.5ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1181)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.5ms | Allocations: 2891)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h2><%= @clip.title %></h2>
+
+<p><%= @clip.body %></p>
+<hr>
+<%= link_to "Edit", edit_clip_path(@clip), :class => 'btn btn-default' %>
+<%= link_to "Delete", clip_path(@clip),
+method: :delete,
+data: {confirm: 'Are you sure?'},
+ :class => 'btn btn-danger' %>
+
+<hr>
+<h3>Add Review</h3>
+<%= form_for([@clip, @clip.reviews.build]) do |f| %>
+<p>
+  <%= f.label :username %> <br>
+  <%= f.text_field(:username, {:class => 'form-control'}) %>
+</p>
+<p>
+  <%= f.label :body %> <br>
+  <%= f.text_area(:body, {:class => 'form-control'}) %>
+</p>
+<p>
+  <%= f.submit({:class = > 'btn btn-default'}) %>
+</p>
+<% end %>
+
+):
+1:    <h2><%= @clip.title %></h2>
+2:    
+3:    <p><%= @clip.body %></p>
+4:    <hr>
+5:    <%= link_to "Edit", edit_clip_path(@clip), :class => 'btn btn-default' %>
+6:    <%= link_to "Delete", clip_path(@clip),
+7:    method: :delete,
+8:    data: {confirm: 'Are you sure?'},
+9:     :class => 'btn btn-danger' %>
+10:    
+11:    <hr>
+12:    <h3>Add Review</h3>
+13:    <%= form_for([@clip, @clip.reviews.build]) do |f| %>
+14:    <p>
+15:      <%= f.label :username %> <br>
+16:      <%= f.text_field(:username, {:class => 'form-control'}) %>
+17:    </p>
+18:    <p>
+19:      <%= f.label :body %> <br>
+20:      <%= f.text_area(:body, {:class => 'form-control'}) %>
+21:    </p>
+22:    <p>
+23:      <%= f.submit({:class = > 'btn btn-default'}) %>
+24:    </p>
+25:    <% end %>
+  
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:27: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:27: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:27: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:27: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:27: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:27: syntax error, unexpected end, expecting ')'
+Started GET "/" for ::1 at 2020-06-29 12:18:04 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1049)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.2ms | Allocations: 6133)
+
+
+Started GET "/" for ::1 at 2020-06-29 12:18:06 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 864)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.1ms | Allocations: 5530)
+
+
+Started GET "/clips/new" for ::1 at 2020-06-29 12:18:10 -0400
+Processing by ClipsController#new as HTML
+  Rendering clips/new.html.erb within layouts/application
+  Rendered clips/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1043)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 5869)
+
+
+Started POST "/clips" for ::1 at 2020-06-29 12:18:18 -0400
+Processing by ClipsController#create as HTML
+  Parameters: {"authenticity_token"=>"Qqttt/BLvtQclpIiEZxNuFYVnmF1YKBXLjGu9DVQiPSM+U5VwE13fIffXYNwlQQE5/8OlxSG/VVDN7yjG5tGGQ==", "clip"=>{"title"=>"testy", "url"=>"www.testy.com"}, "commit"=>"Save Clip"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+  [1m[36mClip Create (1.3ms)[0m  [1m[32mINSERT INTO "clips" ("title", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "testy"], ["url", "www.testy.com"], ["created_at", "2020-06-29 16:18:18.724279"], ["updated_at", "2020-06-29 16:18:18.724279"]]
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+Redirected to http://localhost:3000/clips/7
+Completed 302 Found in 7ms (ActiveRecord: 2.2ms | Allocations: 2853)
+
+
+Started GET "/clips/7" for ::1 at 2020-06-29 12:18:18 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1172)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms | Allocations: 2126)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h2><%= @clip.title %></h2>
+
+<p><%= @clip.body %></p>
+<hr>
+<%= link_to "Edit", edit_clip_path(@clip), :class => 'btn btn-default' %>
+<%= link_to "Delete", clip_path(@clip),
+method: :delete,
+data: {confirm: 'Are you sure?'},
+ :class => 'btn btn-danger' %>
+
+<hr>
+<h3>Add Review</h3>
+<%= form_for([@clip, @clip.reviews.build]) do |f| %>
+<p>
+  <%= f.label :username %> <br>
+  <%= f.text_field(:username, {:class => 'form-control'}) %>
+</p>
+<p>
+  <%= f.label :body %> <br>
+  <%= f.text_area(:body, {:class => 'form-control'}) %>
+</p>
+<p>
+  <%= f.submit({:class = > 'btn btn-default'}) %>
+</p>
+<% end %>
+
+):
+1:    <h2><%= @clip.title %></h2>
+2:    
+3:    <p><%= @clip.body %></p>
+4:    <hr>
+5:    <%= link_to "Edit", edit_clip_path(@clip), :class => 'btn btn-default' %>
+6:    <%= link_to "Delete", clip_path(@clip),
+7:    method: :delete,
+8:    data: {confirm: 'Are you sure?'},
+9:     :class => 'btn btn-danger' %>
+10:    
+11:    <hr>
+12:    <h3>Add Review</h3>
+13:    <%= form_for([@clip, @clip.reviews.build]) do |f| %>
+14:    <p>
+15:      <%= f.label :username %> <br>
+16:      <%= f.text_field(:username, {:class => 'form-control'}) %>
+17:    </p>
+18:    <p>
+19:      <%= f.label :body %> <br>
+20:      <%= f.text_area(:body, {:class => 'form-control'}) %>
+21:    </p>
+22:    <p>
+23:      <%= f.submit({:class = > 'btn btn-default'}) %>
+24:    </p>
+25:    <% end %>
+  
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:27: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:27: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:27: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:27: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:27: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:23: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:23: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:27: syntax error, unexpected end, expecting ')'
+Started GET "/" for ::1 at 2020-06-29 12:25:07 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 4280)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 13.2ms | ActiveRecord: 0.2ms | Allocations: 10846)
+
+
+Started GET "/clips/new" for ::1 at 2020-06-29 12:25:09 -0400
+Processing by ClipsController#new as HTML
+  Rendering clips/new.html.erb within layouts/application
+  Rendered clips/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1020)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 5841)
+
+
+Started POST "/clips" for ::1 at 2020-06-29 12:25:17 -0400
+Processing by ClipsController#create as HTML
+  Parameters: {"authenticity_token"=>"f9WZb1yBLy3A/uqYtqKnpDUnYoUWbfALspouh11NqX2xh7qNbIfmhVu3JTnXq+4YhM3yc3eLrQnfnDzQc4ZnkA==", "clip"=>{"title"=>"testy4", "url"=>"www.reststs.com"}, "commit"=>"Save Clip"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+  [1m[36mClip Create (0.4ms)[0m  [1m[32mINSERT INTO "clips" ("title", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "testy4"], ["url", "www.reststs.com"], ["created_at", "2020-06-29 16:25:17.815504"], ["updated_at", "2020-06-29 16:25:17.815504"]]
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+Redirected to http://localhost:3000/clips/8
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms | Allocations: 2814)
+
+
+Started GET "/clips/8" for ::1 at 2020-06-29 12:25:17 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1250)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms | Allocations: 2457)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h2><%= @clip.title %></h2>
+
+<p><%= @clip.body %></p>
+<hr>
+<%= link_to "Edit", edit_clip_path(@clip), :class => 'btn btn-default' %>
+<%= link_to "Delete", clip_path(@clip),
+method: :delete,
+data: {confirm: 'Are you sure?'},
+ :class => 'btn btn-danger' %>
+
+<hr>
+<h3>Reviews</h3>
+<% @clip.reviews.each do |review| %>
+<div class = "Well">
+  <p><strong><%= review.username %></strong>: <%= review.body %></p>
+<% end %>
+
+<h3>Add Review</h3>
+<%= form_for([@clip, @clip.reviews.build]) do |f| %>
+<p>
+  <%= f.label :username %> <br>
+  <%= f.text_field(:username, {:class => 'form-control'}) %>
+</p>
+<p>
+  <%= f.label :body %> <br>
+  <%= f.text_area(:body, {:class => 'form-control'}) %>
+</p>
+<p>
+  <%= f.submit({:class = > 'btn btn-default'}) %>
+</p>
+<% end %>
+
+):
+1:    <h2><%= @clip.title %></h2>
+2:    
+3:    <p><%= @clip.body %></p>
+4:    <hr>
+5:    <%= link_to "Edit", edit_clip_path(@clip), :class => 'btn btn-default' %>
+6:    <%= link_to "Delete", clip_path(@clip),
+7:    method: :delete,
+8:    data: {confirm: 'Are you sure?'},
+9:     :class => 'btn btn-danger' %>
+10:    
+11:    <hr>
+12:    <h3>Reviews</h3>
+13:    <% @clip.reviews.each do |review| %>
+14:    <div class = "Well">
+15:      <p><strong><%= review.username %></strong>: <%= review.body %></p>
+16:    <% end %>
+17:    
+18:    <h3>Add Review</h3>
+19:    <%= form_for([@clip, @clip.reviews.build]) do |f| %>
+20:    <p>
+21:      <%= f.label :username %> <br>
+22:      <%= f.text_field(:username, {:class => 'form-control'}) %>
+23:    </p>
+24:    <p>
+25:      <%= f.label :body %> <br>
+26:      <%= f.text_area(:body, {:class => 'form-control'}) %>
+27:    </p>
+28:    <p>
+29:      <%= f.submit({:class = > 'btn btn-default'}) %>
+30:    </p>
+31:    <% end %>
+  
+app/views/clips/show.html.erb:29: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:29: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:33: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:29: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:29: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:33: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:29: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:29: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:33: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:29: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:29: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:33: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:29: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:29: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:33: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:29: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:29: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:33: syntax error, unexpected end, expecting ')'
+Started POST "/clips" for ::1 at 2020-06-29 12:26:47 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ClipsController#create as HTML
+  Parameters: {"authenticity_token"=>"q+Yss0CUxGmA7synQo+MAaz7w/Z0GT/wj9TrATtk9fW2O5NGAbuN0dUtki6gWLrn+IqFPQsHd8BjYRd++ee6EA==", "clip"=>{"title"=>"testy4", "url"=>"www.reststs.com"}, "commit"=>"Save Clip"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+  [1m[36mClip Create (0.4ms)[0m  [1m[32mINSERT INTO "clips" ("title", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "testy4"], ["url", "www.reststs.com"], ["created_at", "2020-06-29 16:26:47.696033"], ["updated_at", "2020-06-29 16:26:47.696033"]]
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+Redirected to http://localhost:3000/clips/9
+Completed 302 Found in 12ms (ActiveRecord: 2.1ms | Allocations: 7245)
+
+
+Started GET "/clips/9" for ::1 at 2020-06-29 12:26:47 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1241)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms | Allocations: 3066)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h2><%= @clip.title %></h2>
+
+<p><%= @clip.url %></p>
+<hr>
+<%= link_to "Edit", edit_clip_path(@clip), :class => 'btn btn-default' %>
+<%= link_to "Delete", clip_path(@clip),
+method: :delete,
+data: {confirm: 'Are you sure?'},
+ :class => 'btn btn-danger' %>
+
+<hr>
+<h3>Reviews</h3>
+<% @clip.reviews.each do |review| %>
+<div class = "Well">
+  <p><strong><%= review.username %></strong>: <%= review.url %></p>
+<% end %>
+
+<h3>Add Review</h3>
+<%= form_for([@clip, @clip.reviews.build]) do |f| %>
+<p>
+  <%= f.label :username %> <br>
+  <%= f.text_field(:username, {:class => 'form-control'}) %>
+</p>
+<p>
+  <%= f.label :url %> <br>
+  <%= f.text_area(:url, {:class => 'form-control'}) %>
+</p>
+<p>
+  <%= f.submit({:class = > 'btn btn-default'}) %>
+</p>
+<% end %>
+
+):
+1:    <h2><%= @clip.title %></h2>
+2:    
+3:    <p><%= @clip.url %></p>
+4:    <hr>
+5:    <%= link_to "Edit", edit_clip_path(@clip), :class => 'btn btn-default' %>
+6:    <%= link_to "Delete", clip_path(@clip),
+7:    method: :delete,
+8:    data: {confirm: 'Are you sure?'},
+9:     :class => 'btn btn-danger' %>
+10:    
+11:    <hr>
+12:    <h3>Reviews</h3>
+13:    <% @clip.reviews.each do |review| %>
+14:    <div class = "Well">
+15:      <p><strong><%= review.username %></strong>: <%= review.url %></p>
+16:    <% end %>
+17:    
+18:    <h3>Add Review</h3>
+19:    <%= form_for([@clip, @clip.reviews.build]) do |f| %>
+20:    <p>
+21:      <%= f.label :username %> <br>
+22:      <%= f.text_field(:username, {:class => 'form-control'}) %>
+23:    </p>
+24:    <p>
+25:      <%= f.label :url %> <br>
+26:      <%= f.text_area(:url, {:class => 'form-control'}) %>
+27:    </p>
+28:    <p>
+29:      <%= f.submit({:class = > 'btn btn-default'}) %>
+30:    </p>
+31:    <% end %>
+  
+app/views/clips/show.html.erb:29: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:29: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:33: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:29: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:29: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:33: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:29: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:29: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:33: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:29: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:29: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:33: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:29: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:29: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:33: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:29: syntax error, unexpected '=', expecting =>
+app/views/clips/show.html.erb:29: syntax error, unexpected '}', expecting ')'
+app/views/clips/show.html.erb:31: syntax error, unexpected end, expecting ')'
+app/views/clips/show.html.erb:33: syntax error, unexpected end, expecting ')'
+Started GET "/clips/9" for ::1 at 2020-06-29 12:27:28 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 9]]
+  ↳ app/views/clips/show.html.erb:13
+  Rendered clips/show.html.erb within layouts/application (Duration: 50.5ms | Allocations: 17897)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.8ms | Allocations: 19586)
+
+
+  
+ActionView::Template::Error (undefined method `url' for #<Review:0x00007f7ff0680b60>):
+    23: </p>
+    24: <p>
+    25:   <%= f.label :url %> <br>
+    26:   <%= f.text_area(:url, {:class => 'form-control'}) %>
+    27: </p>
+    28: <p>
+    29:   <%= f.submit({:class => 'btn btn-default'}) %>
+  
+app/views/clips/show.html.erb:26
+app/views/clips/show.html.erb:19
+Started GET "/clips/9" for ::1 at 2020-06-29 12:29:52 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 9]]
+  ↳ app/views/clips/show.html.erb:13
+  Rendered clips/show.html.erb within layouts/application (Duration: 5.0ms | Allocations: 4085)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.3ms | Allocations: 5774)
+
+
+  
+ActionView::Template::Error (undefined method `url' for #<Review:0x00007f7ff16682f8>):
+    24: </p>
+    25: <p>
+    26:   <%= f.label :url %> <br>
+    27:   <%= f.text_area(:url, {:class => 'form-control'}) %>
+    28: </p>
+    29: <p>
+    30:   <%= f.submit({:class => 'btn btn-default'}) %>
+  
+app/views/clips/show.html.erb:27
+app/views/clips/show.html.erb:20
+Started POST "/clips" for ::1 at 2020-06-29 12:29:56 -0400
+Processing by ClipsController#create as HTML
+  Parameters: {"authenticity_token"=>"q+Yss0CUxGmA7synQo+MAaz7w/Z0GT/wj9TrATtk9fW2O5NGAbuN0dUtki6gWLrn+IqFPQsHd8BjYRd++ee6EA==", "clip"=>{"title"=>"testy4", "url"=>"www.reststs.com"}, "commit"=>"Save Clip"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+  [1m[36mClip Create (0.4ms)[0m  [1m[32mINSERT INTO "clips" ("title", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "testy4"], ["url", "www.reststs.com"], ["created_at", "2020-06-29 16:29:56.836755"], ["updated_at", "2020-06-29 16:29:56.836755"]]
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+Redirected to http://localhost:3000/clips/10
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms | Allocations: 2641)
+
+
+Started GET "/clips/10" for ::1 at 2020-06-29 12:29:56 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 10]]
+  ↳ app/views/clips/show.html.erb:13
+  Rendered clips/show.html.erb within layouts/application (Duration: 5.0ms | Allocations: 3725)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms | Allocations: 4677)
+
+
+  
+ActionView::Template::Error (undefined method `url' for #<Review:0x00007f7ff11f8470>):
+    24: </p>
+    25: <p>
+    26:   <%= f.label :url %> <br>
+    27:   <%= f.text_area(:url, {:class => 'form-control'}) %>
+    28: </p>
+    29: <p>
+    30:   <%= f.submit({:class => 'btn btn-default'}) %>
+  
+app/views/clips/show.html.erb:27
+app/views/clips/show.html.erb:20
+Started GET "/clips/10" for ::1 at 2020-06-29 12:30:14 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 10]]
+  ↳ app/views/clips/show.html.erb:13
+  Rendered clips/show.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2055)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.3ms | Allocations: 8271)
+
+
+Started POST "/clips/10/reviews" for ::1 at 2020-06-29 12:30:29 -0400
+  
+SyntaxError (/Users/sjordan/Desktop/twitch-clip-finder/app/controllers/reviews_controller.rb:11: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/reviews_controller.rb:11: syntax error, unexpected end, expecting end-of-input
+app/controllers/reviews_controller.rb:11: syntax error, unexpected end, expecting end-of-input
+app/controllers/reviews_controller.rb:11: syntax error, unexpected end, expecting end-of-input
+Started POST "/clips/10/reviews" for ::1 at 2020-06-29 12:31:28 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"P7O6ZD4b8nKbFY0rzSm1npO5Gg74EDHprUhvdfPq9LMibgWRfzS7ys7W06Iv/oN4x8hcxYcOedlB/ZMKMWm7Vg==", "review"=>{"username"=>"sjordan", "body"=>"review"}, "commit"=>"Create Review", "clip_id"=>"10"}
+Completed 500 Internal Server Error in 160ms (ActiveRecord: 0.0ms | Allocations: 98760)
+
+
+  
+NameError (undefined local variable or method `clip' for #<ReviewsController:0x00007f7fed2e8be0>):
+  
+app/controllers/reviews_controller.rb:3:in `create'
+Started POST "/clips/10/reviews" for ::1 at 2020-06-29 12:32:30 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"P7O6ZD4b8nKbFY0rzSm1npO5Gg74EDHprUhvdfPq9LMibgWRfzS7ys7W06Iv/oN4x8hcxYcOedlB/ZMKMWm7Vg==", "review"=>{"username"=>"sjordan", "body"=>"review"}, "commit"=>"Create Review", "clip_id"=>"10"}
+Completed 500 Internal Server Error in 166ms (ActiveRecord: 0.0ms | Allocations: 98322)
+
+
+  
+NameError (undefined local variable or method `clip' for #<ReviewsController:0x00007f7ff1689110>):
+  
+app/controllers/reviews_controller.rb:3:in `create'
+Started POST "/clips/10/reviews" for ::1 at 2020-06-29 12:32:32 -0400
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"P7O6ZD4b8nKbFY0rzSm1npO5Gg74EDHprUhvdfPq9LMibgWRfzS7ys7W06Iv/oN4x8hcxYcOedlB/ZMKMWm7Vg==", "review"=>{"username"=>"sjordan", "body"=>"review"}, "commit"=>"Create Review", "clip_id"=>"10"}
+Completed 500 Internal Server Error in 155ms (ActiveRecord: 0.0ms | Allocations: 98361)
+
+
+  
+NameError (undefined local variable or method `clip' for #<ReviewsController:0x00007f7ff0c03948>):
+  
+app/controllers/reviews_controller.rb:3:in `create'
+Started POST "/clips/10/reviews" for ::1 at 2020-06-29 12:33:09 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"P7O6ZD4b8nKbFY0rzSm1npO5Gg74EDHprUhvdfPq9LMibgWRfzS7ys7W06Iv/oN4x8hcxYcOedlB/ZMKMWm7Vg==", "review"=>{"username"=>"sjordan", "body"=>"review"}, "commit"=>"Create Review", "clip_id"=>"10"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:3:in `create'
+Completed 500 Internal Server Error in 183ms (ActiveRecord: 0.7ms | Allocations: 103445)
+
+
+  
+NameError (undefined local variable or method `clip' for #<ReviewsController:0x00007f7fed44d918>
+Did you mean?  @clip):
+  
+app/controllers/reviews_controller.rb:4:in `create'
+Started POST "/clips/10/reviews" for ::1 at 2020-06-29 12:33:33 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"P7O6ZD4b8nKbFY0rzSm1npO5Gg74EDHprUhvdfPq9LMibgWRfzS7ys7W06Iv/oN4x8hcxYcOedlB/ZMKMWm7Vg==", "review"=>{"username"=>"sjordan", "body"=>"review"}, "commit"=>"Create Review", "clip_id"=>"10"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:3:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:4:in `create'
+  [1m[36mReview Create (0.5ms)[0m  [1m[32mINSERT INTO "reviews" ("username", "body", "clip_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "sjordan"], ["body", "review"], ["clip_id", 10], ["created_at", "2020-06-29 16:33:33.634670"], ["updated_at", "2020-06-29 16:33:33.634670"]]
+  ↳ app/controllers/reviews_controller.rb:4:in `create'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:4:in `create'
+Redirected to http://localhost:3000/clips/10
+Completed 302 Found in 21ms (ActiveRecord: 2.6ms | Allocations: 13334)
+
+
+Started GET "/clips/10" for ::1 at 2020-06-29 12:33:33 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 10]]
+  ↳ app/views/clips/show.html.erb:13
+  Rendered clips/show.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2362)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.4ms | Allocations: 8576)
+
+
+Started GET "/clips/10" for ::1 at 2020-06-29 12:39:04 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1562)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms | Allocations: 3264)
+
+
+  
+ActionView::Template::Error (Missing partial reviews/_reviews with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/sjordan/Desktop/twitch-clip-finder/app/views"
+  * "/Users/sjordan/.rvm/gems/ruby-2.6.1/gems/actiontext-6.0.3.2/app/views"
+  * "/Users/sjordan/.rvm/gems/ruby-2.6.1/gems/actionmailbox-6.0.3.2/app/views"
+):
+    10: 
+    11: <hr>
+    12: 
+    13: <% render 'reviews/reviews' %>
+    14: <% render 'reviews/form' %>
+  
+app/views/clips/show.html.erb:13
+Started GET "/clips/10" for ::1 at 2020-06-29 12:39:33 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1565)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms | Allocations: 3250)
+
+
+  
+ActionView::Template::Error (Missing partial reviews/_reviews with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/sjordan/Desktop/twitch-clip-finder/app/views"
+  * "/Users/sjordan/.rvm/gems/ruby-2.6.1/gems/actiontext-6.0.3.2/app/views"
+  * "/Users/sjordan/.rvm/gems/ruby-2.6.1/gems/actionmailbox-6.0.3.2/app/views"
+):
+    10: 
+    11: <hr>
+    12: 
+    13: <%= render 'reviews/reviews' %>
+    14: <%= render 'reviews/form' %>
+  
+app/views/clips/show.html.erb:13
+Started POST "/clips" for ::1 at 2020-06-29 12:39:49 -0400
+Processing by ClipsController#create as HTML
+  Parameters: {"authenticity_token"=>"q+Yss0CUxGmA7synQo+MAaz7w/Z0GT/wj9TrATtk9fW2O5NGAbuN0dUtki6gWLrn+IqFPQsHd8BjYRd++ee6EA==", "clip"=>{"title"=>"testy4", "url"=>"www.reststs.com"}, "commit"=>"Save Clip"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+  [1m[36mClip Create (0.5ms)[0m  [1m[32mINSERT INTO "clips" ("title", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "testy4"], ["url", "www.reststs.com"], ["created_at", "2020-06-29 16:39:49.943434"], ["updated_at", "2020-06-29 16:39:49.943434"]]
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clips_controller.rb:18:in `create'
+Redirected to http://localhost:3000/clips/11
+Completed 302 Found in 6ms (ActiveRecord: 1.7ms | Allocations: 2780)
+
+
+Started GET "/clips/11" for ::1 at 2020-06-29 12:39:49 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1083)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms | Allocations: 2036)
+
+
+  
+ActionView::Template::Error (Missing partial reviews/_reviews with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/sjordan/Desktop/twitch-clip-finder/app/views"
+  * "/Users/sjordan/.rvm/gems/ruby-2.6.1/gems/actiontext-6.0.3.2/app/views"
+  * "/Users/sjordan/.rvm/gems/ruby-2.6.1/gems/actionmailbox-6.0.3.2/app/views"
+):
+    10: 
+    11: <hr>
+    12: 
+    13: <%= render 'reviews/reviews' %>
+    14: <%= render 'reviews/form' %>
+  
+app/views/clips/show.html.erb:13
+Started GET "/" for ::1 at 2020-06-29 12:40:37 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1303)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.2ms | Allocations: 6387)
+
+
+Started GET "/clips/2" for ::1 at 2020-06-29 12:40:39 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  Rendered clips/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1085)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms | Allocations: 2033)
+
+
+  
+ActionView::Template::Error (Missing partial reviews/_reviews with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/sjordan/Desktop/twitch-clip-finder/app/views"
+  * "/Users/sjordan/.rvm/gems/ruby-2.6.1/gems/actiontext-6.0.3.2/app/views"
+  * "/Users/sjordan/.rvm/gems/ruby-2.6.1/gems/actionmailbox-6.0.3.2/app/views"
+):
+    10: 
+    11: <hr>
+    12: 
+    13: <%= render 'reviews/reviews' %>
+    14: <%= render 'reviews/form' %>
+  
+app/views/clips/show.html.erb:13
+Started GET "/clips/2" for ::1 at 2020-06-29 12:42:57 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 2]]
+  ↳ app/views/reviews/_reviews.html.erb:2
+  Rendered reviews/_reviews.html.erb (Duration: 1.5ms | Allocations: 912)
+  Rendered reviews/_form.html.erb (Duration: 1.9ms | Allocations: 1043)
+  Rendered clips/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2668)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.3ms | Allocations: 8879)
+
+
+Started GET "/clips/2" for ::1 at 2020-06-29 12:45:00 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 2]]
+  ↳ app/views/reviews/_reviews.html.erb:2
+  Rendered reviews/_reviews.html.erb (Duration: 1.6ms | Allocations: 914)
+  Rendered reviews/_form.html.erb (Duration: 2.0ms | Allocations: 1040)
+  Rendered clips/show.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2672)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 13.7ms | ActiveRecord: 0.3ms | Allocations: 8883)
+
+
+Started POST "/clips/2/reviews" for ::1 at 2020-06-29 12:45:06 -0400
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"9zvgMhwJa5/i6IOOiw1vkYtRElHHGFgrCUhyEWLRfRfq5l/HXSYiJ7cr3Qdp2ll33yBUmrgGEBvl/Y5uoFIy8g==", "review"=>{"username"=>"adsfa", "body"=>"asdfa"}, "commit"=>"Create Review", "clip_id"=>"2"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:3:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:4:in `create'
+  [1m[36mReview Create (0.4ms)[0m  [1m[32mINSERT INTO "reviews" ("username", "body", "clip_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "adsfa"], ["body", "asdfa"], ["clip_id", 2], ["created_at", "2020-06-29 16:45:06.916001"], ["updated_at", "2020-06-29 16:45:06.916001"]]
+  ↳ app/controllers/reviews_controller.rb:4:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:4:in `create'
+Redirected to http://localhost:3000/clips/2
+Completed 302 Found in 6ms (ActiveRecord: 1.6ms | Allocations: 3607)
+
+
+Started GET "/clips/2" for ::1 at 2020-06-29 12:45:06 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 2]]
+  ↳ app/views/reviews/_reviews.html.erb:2
+  Rendered reviews/_reviews.html.erb (Duration: 1.8ms | Allocations: 875)
+  Rendered reviews/_form.html.erb (Duration: 1.8ms | Allocations: 828)
+  Rendered clips/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1943)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.4ms | Allocations: 7145)
+
+
+Started DELETE "/clips/2/reviews/2" for ::1 at 2020-06-29 12:46:29 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReviewsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"oQTfBoEIKjQGLHltjNJ1V9jpAbaiPKiZ67MXLudLjKu82WDzwCdjjFPvJ+RuBUOxjJhHfd0i4KkHButRJcjDTg==", "clip_id"=>"2", "id"=>"2"}
+Completed 404 Not Found in 4ms (ActiveRecord: 0.6ms | Allocations: 2106)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Clip without an ID):
+  
+app/controllers/reviews_controller.rb:9:in `destroy'
+Started DELETE "/clips/2/reviews/2" for ::1 at 2020-06-29 12:46:51 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReviewsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"oQTfBoEIKjQGLHltjNJ1V9jpAbaiPKiZ67MXLudLjKu82WDzwCdjjFPvJ+RuBUOxjJhHfd0i4KkHButRJcjDTg==", "clip_id"=>"2", "id"=>"2"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9:in `destroy'
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ? AND "reviews"."id" = ? LIMIT ?[0m  [["clip_id", 2], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:10:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:11:in `destroy'
+  [1m[36mReview Destroy (0.4ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/reviews_controller.rb:11:in `destroy'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:11:in `destroy'
+Redirected to http://localhost:3000/clips/2
+Completed 302 Found in 20ms (ActiveRecord: 2.6ms | Allocations: 13315)
+
+
+Started GET "/clips/2" for ::1 at 2020-06-29 12:46:51 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:7:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 2]]
+  ↳ app/views/reviews/_reviews.html.erb:2
+  Rendered reviews/_reviews.html.erb (Duration: 1.2ms | Allocations: 924)
+  Rendered reviews/_form.html.erb (Duration: 1.6ms | Allocations: 935)
+  Rendered clips/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2107)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.3ms | Allocations: 7474)
+
+
+Started GET "/clips/2" for ::1 at 2020-06-29 12:50:26 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:8:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 2]]
+  ↳ app/views/reviews/_reviews.html.erb:2
+  Rendered reviews/_reviews.html.erb (Duration: 2.9ms | Allocations: 2263)
+  Rendered reviews/_form.html.erb (Duration: 6.9ms | Allocations: 5094)
+  Rendered clips/show.html.erb within layouts/application (Duration: 10.3ms | Allocations: 7606)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 16.0ms | ActiveRecord: 1.3ms | Allocations: 17460)
+
+
+Started GET "/" for ::1 at 2020-06-29 12:50:27 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1309)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 6128)
+
+
+Started GET "/clips/new" for ::1 at 2020-06-29 12:50:30 -0400
+Processing by ClipsController#new as HTML
+Filter chain halted as #<Proc:0x00007f7fed18e128@/Users/sjordan/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.3.2/lib/action_controller/metal/http_authentication.rb:73> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Started GET "/" for ::1 at 2020-06-29 12:50:35 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1118)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.1ms | Allocations: 5794)
+
+
+Started GET "/clips/2" for ::1 at 2020-06-29 12:50:36 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:8:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 2]]
+  ↳ app/views/reviews/_reviews.html.erb:2
+  Rendered reviews/_reviews.html.erb (Duration: 0.9ms | Allocations: 747)
+  Rendered reviews/_form.html.erb (Duration: 1.5ms | Allocations: 830)
+  Rendered clips/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1816)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.2ms | Allocations: 7011)
+
+
+Started GET "/" for ::1 at 2020-06-29 12:50:38 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1118)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.2ms | Allocations: 5783)
+
+
+Started GET "/clips/2" for ::1 at 2020-06-29 12:50:41 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:8:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 2]]
+  ↳ app/views/reviews/_reviews.html.erb:2
+  Rendered reviews/_reviews.html.erb (Duration: 1.3ms | Allocations: 747)
+  Rendered reviews/_form.html.erb (Duration: 1.8ms | Allocations: 827)
+  Rendered clips/show.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1812)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.3ms | Allocations: 7016)
+
+
+Started GET "/clips/2/edit" for ::1 at 2020-06-29 12:50:42 -0400
+Processing by ClipsController#edit as HTML
+  Parameters: {"id"=>"2"}
+Filter chain halted as #<Proc:0x00007f7fed18e128@/Users/sjordan/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.3.2/lib/action_controller/metal/http_authentication.rb:73> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 231)
+
+
+Started GET "/clips/2/edit" for ::1 at 2020-06-29 12:50:48 -0400
+Processing by ClipsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:27:in `edit'
+  Rendering clips/edit.html.erb within layouts/application
+  Rendered clips/edit.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1009)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.1ms | Allocations: 6391)
+
+
+Started GET "/" for ::1 at 2020-06-29 12:50:50 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips"[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1118)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.2ms | Allocations: 5790)
+
+

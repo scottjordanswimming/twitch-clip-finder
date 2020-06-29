@@ -1,0 +1,22 @@
+<h1>Edit Clip</h1>
+
+<%= form_for :clip, url: clip_path(@clip), method: :patch do |f| %>
+<% if @clip.errors.any? %>
+<%  @clip.errors.full_messages.each do |msg| %>
+<div class ="alert alert-danger"><%= msg %></div>
+<% end %>
+<% end %>
+<p>
+  <%= f.label :title %><br>
+  <%= f.text_field(:title, {:class => 'form-control'}) %>
+</p>
+
+<p>
+  <%= f.label :url %><br>
+  <%= f.text_area(:url, {:class => 'form-control'}) %>
+</p>
+
+<p>
+  <%= f.submit({:class => 'btn btn-primary'}) %>
+</p>
+<% end %>

@@ -1,0 +1,9 @@
+<h3>Reviews</h3>
+<% @clip.reviews.each do |review| %>
+<div class = "Well">
+  <p><strong><%= review.username %></strong>: <%= review.body %></p>
+  <%= link_to '[X]', [review.clip, review],
+  method: :delete,
+  data: { confirm: 'Are you sure?'} %></p>
+</div>
+<% end %>

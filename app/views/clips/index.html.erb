@@ -1,0 +1,8 @@
+<h1>All the Clips</h1>
+<% @clips.each do |clip| %>
+<div class="well">
+<h3><%= clip.title %></h3>
+<p><%= clip.url %> </p>
+<%= link_to "Watch", clip_path(clip), :class => 'btn btn-default' %>
+</div>
+<% end %>
