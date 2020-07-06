@@ -1,16 +1,16 @@
 Rails.application.routes.draw do
-root 'sessions#home', as: 'home'
+root 'clips#index', as: 'home'
 get 'about' => 'pages#about', as: 'about'
 resources :clips do
   resources :reviews
 end
-  # resources :streamers
+  resources :streamers
   get '/' => 'sessions#home'
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   get '/signup' => 'users#new'
   post '/signup' => 'users#create'
-  delete '/logout' => 'sessions#destroy'
+  get '/logout' => 'sessions#destroy'
   # get '/most_popular' => 'clips#most_popular'
   #
   # get '/auth/:provider/callback' => 'sessions#create'

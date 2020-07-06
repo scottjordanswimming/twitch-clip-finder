@@ -1,0 +1,29 @@
+<%= render partial: 'layouts/errors', locals: {object: @clip}  %>
+<%= form_for :clip, url: clips_path do |f| %>
+
+
+<p>
+  <%= f.label :title %><br>
+  <%= f.text_field(:title, {:class => 'form-control'}) %>
+</p>
+
+
+<p>
+  <%= f.label :url %><br>
+  <%= f.text_area(:url, {:class => 'form-control'}) %>
+</p>
+
+<p>Select a Streamer</p>
+
+  <div>
+      <%= f.collection_select :streamer_id, Streamer.all, :id, :name, include_blank: 'Select One'%>
+
+    </div>
+  <!-- <%= f.label :streamer %><br>
+  <%= f.text_field(:streamer, {:class => 'form-control'}) %> -->
+
+
+<p>
+  <%= f.submit({:class => 'btn btn-primary'}) %>
+</p>
+<% end %>

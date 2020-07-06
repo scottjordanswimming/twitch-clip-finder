@@ -10,31 +10,43 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_01_141847) do
+ActiveRecord::Schema.define(version: 2020_07_02_192843) do
 
   create_table "clips", force: :cascade do |t|
     t.string "title"
     t.string "url"
+    t.integer "streamer_id"
+    t.integer "user_id"
+    t.integer "review_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "reviews", force: :cascade do |t|
-    t.string "username"
-    t.text "body"
-    t.integer "clip_id", null: false
+    t.string "title"
+    t.string "url"
+    t.integer "streamer_id"
+    t.integer "user_id"
+    t.integer "clip_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["clip_id"], name: "index_reviews_on_clip_id"
+  end
+
+  create_table "streamers", force: :cascade do |t|
+    t.string "name"
+    t.integer "clip_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "email"
     t.string "password_digest"
+    t.integer "review_id"
+    t.integer "clip_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "reviews", "clips"
 end
