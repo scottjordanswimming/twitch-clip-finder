@@ -1,5 +1,7 @@
 <h1>Login!</h1>
 
+<!-- <%= form_tag('/sessions', method: :post) do %> -->
+
 <%= form_for(:user) do |f|%>
   <%= f.label :username %>
   <%= f.text_field :username %>
@@ -9,4 +11,5 @@
 
 
   <%= f.submit "Log In" %>
+<% end %>
 <% end %>

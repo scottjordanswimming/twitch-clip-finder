@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_02_192843) do
+ActiveRecord::Schema.define(version: 2020_07_08_164114) do
 
   create_table "clips", force: :cascade do |t|
     t.string "title"
@@ -30,6 +30,8 @@ ActiveRecord::Schema.define(version: 2020_07_02_192843) do
     t.integer "clip_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "username"
+    t.string "body"
   end
 
   create_table "streamers", force: :cascade do |t|

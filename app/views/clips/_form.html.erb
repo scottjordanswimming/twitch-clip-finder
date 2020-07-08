@@ -13,15 +13,11 @@
   <%= f.text_area(:url, {:class => 'form-control'}) %>
 </p>
 
-<p>Select a Streamer</p>
-
   <div>
+    <%= f.label :streamer %>
       <%= f.collection_select :streamer_id, Streamer.all, :id, :name, include_blank: 'Select One'%>
 
     </div>
-  <!-- <%= f.label :streamer %><br>
-  <%= f.text_field(:streamer, {:class => 'form-control'}) %> -->
-
 
 <p>
   <%= f.submit({:class => 'btn btn-primary'}) %>

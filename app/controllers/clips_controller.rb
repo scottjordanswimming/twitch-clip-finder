@@ -2,7 +2,7 @@ class ClipsController < ApplicationController
   #http_basic_authenticate_with name: "brad", password:"1234", except: [:index, :show]
 
 before_action :redirect_if_not_logged_in
-skip_before_action :redirect_if_not_logged_in, only: [:index]
+#skip_before_action :redirect_if_not_logged_in, only: [:index]
 
   def index
 @clips = Clip.all
@@ -48,6 +48,6 @@ redirect_to clips_path
   end
 
   private def clip_params
-params.require(:clip).permit(:title, :url)
+params.require(:clip).permit(:title, :url, :streamer_id)
   end
 end
