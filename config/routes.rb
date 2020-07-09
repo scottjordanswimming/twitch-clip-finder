@@ -18,6 +18,7 @@ get '/users', to:'users#index', as: 'users'
   post '/signup' => 'users#create'
   get '/logout' => 'sessions#destroy'
   post '/sessions', to: 'sessions#create', as: 'sessions'
+  delete '/sessions/', to: 'sessions#destroy'
   #post '/clips'
   # get '/most_popular' => 'clips#most_popular'
   #

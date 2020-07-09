@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-  #skip_before_action :verified_user, only: [:new, :create]
+#skip_before_action :verified_user, only: [:new, :create]
 
      def home
      end
@@ -28,7 +28,7 @@ end
       # end
 
       def destroy
-        sessions.clear
+        session.clear
         redirect_to '/'
       end
 
