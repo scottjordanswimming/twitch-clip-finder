@@ -5,8 +5,12 @@ class ReviewsController < ApplicationController
 #skip_before_action :redirect_if_not_logged_in, only: [:index]
 
   def create
+
 @clip = Clip.find(params[:clip_id])
+
 @review = @clip.reviews.create(review_params)
+# @review.save
+
 redirect_to clip_path(@clip)
   end
 
@@ -26,6 +30,6 @@ redirect_to clip_path(@clip)
       end
 
   private def review_params
-params.require(:review).permit(:username, :body)
+params.require(:review).permit(:body, :title)
 end
 end
