@@ -16,6 +16,17 @@
   <%= f.text_area(:url, {:class => 'form-control'}) %>
 </p>
 
+<div>
+  <p>Choose a streamer:</p>
+  <%= f.label :streamer %>
+    <%= f.collection_select :streamer_id, Streamer.all, :id, :name, include_blank: 'Select One'%>
+<p>Or create a new streamer:</p>
+    <%= f.fields_for :streamers, @clip.streamers.build do |streamers_fields| %>
+        <%= streamers_fields.label :name, "Streamer" %>
+        <%= streamers_fields.text_field :name %>
+      <% end %>
+  </div>
+
 <p>
   <%= f.submit({:class => 'btn btn-primary'}) %>
 </p>

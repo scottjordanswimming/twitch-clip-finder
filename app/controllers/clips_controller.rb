@@ -47,7 +47,9 @@ end
 redirect_to clips_path
   end
 
+
+
   private def clip_params
-params.require(:clip).permit(:title, :url, :streamer_id)
+params.require(:clip).permit(:title, :url, :streamer_id, :streamer_ids => [], :streamers_attributes => [:name])
   end
 end

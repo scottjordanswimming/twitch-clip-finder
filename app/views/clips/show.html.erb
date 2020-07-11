@@ -1,9 +1,14 @@
 <h2>Title: <%= @clip.title %></h2>
 
 <p>URL to Clip:<%= @clip.url %></p>
-<p><% @streamer = Streamer.find(@clip.streamer_id) %></p>
-<p>Streamer: <%= @streamer.name %></p>
-<hr>
+
+Streamers:</br />
+<ul>
+  <% @clip.streamers.each do |s| %>
+  <li><%= s.name %></li>
+  <% end %>
+</ul>
+
 <%= link_to "Edit", edit_clip_path(@clip), :class => 'btn btn-default' %>
 <%= link_to "Delete", clip_path(@clip),
 method: :delete,
