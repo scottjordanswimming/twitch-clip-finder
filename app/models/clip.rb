@@ -10,6 +10,7 @@ class Clip < ApplicationRecord
                     length: {minimum: 3}
 
 #  validate :not_a_duplicate
+scope :alpha, -> {order(:title)}
 
 def streamers_attributes=(streamers_hashes)
   # {"0"=>{"name"=>"this is the box"}}

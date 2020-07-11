@@ -1,5 +1,8 @@
 <h1>Clip Finder</h1>
 <h2>Welcome to <%= @user.username%>'s homepage! </h2>
 
-<h3>Here are the clips reviewed by <%=@user.username%>:</h3>
-<% clips = @user.reviewed_clips%>
+<h3>Here are the clips created by <%=@user.username%>:</h3>
+
+<% @user.reviews.alpha.each do |c| %>
+<p><%= c %></p>
+<% end %>
