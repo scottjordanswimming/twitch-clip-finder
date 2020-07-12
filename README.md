@@ -1,24 +1,27 @@
-# README
+# Rails App Project
+## Rails Portfolio Project for Flatiron School.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
+Welcome to the Twitch Clip Finder App. You can create your own account, catalog all of your favorite (and not-so-favorite) twitch clips and give reviews on all of them. To get started, follow the installation instructions below.
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+1.Fork and clone this repository, and then within the main directory execute
 
-* System dependencies
+`bundle install`
 
-* Configuration
+2.Then run:
 
-* Database creation
+`rails s`
 
-* Database initialization
+3.Open up a new browser tab and navigate to:
 
-* How to run the test suite
+http://localhost:3000
 
-* Services (job queues, cache servers, search engines, etc.)
+4.Press ctrl+C to shut it down
 
-* Deployment instructions
+## Contributing
+Bug reports and pull requests are welcome on GitHub at https://github.com/scottjordanswimming/twitch-clip-finder. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
 
-* ...
+## License
+The gem is available as open source under the terms of the MIT License.
