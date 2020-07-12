@@ -22,7 +22,7 @@ get '/users', to:'users#index', as: 'users'
   #post '/clips'
   # get '/most_popular' => 'clips#most_popular'
   #
-  # get '/auth/:provider/callback' => 'sessions#create'
+get '/auth/:provider/callback' => 'sessions#create'
   #
   #
   resources :reviews
