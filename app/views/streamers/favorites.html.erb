@@ -1,0 +1,6 @@
+<h1>Favorite Streamers</h1>
+<% Streamer.all.each do |s| %>
+<% if @streamer.favorite %>
+<h3><%= s.name %></h3>
+<% end %>
+<% end %>

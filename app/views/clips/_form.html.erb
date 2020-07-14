@@ -19,17 +19,17 @@
       <%= f.collection_select :streamer_id, Streamer.all, :id, :name, include_blank: 'Select One'%>
 
 <p>Or create a new streamer:</p>
-      <%= f.fields_for :streamers, @clip.streamers.build do |streamers_fields| %>
+      <!-- <%= f.fields_for :streamers, @clip.streamers.build do |streamers_fields| %>
           <%= streamers_fields.label :name, "Streamer" %>
           <%= streamers_fields.text_field :name %>
-        <% end %>
+        <% end %> -->
 
-  <%= Streamer.all.each do |s| %>
+  <!-- <%= Streamer.all.each do |s| %>
   <p>
     <label for="streamer_id_<%= s.id %>"><%= s.name %></label>
     <input type ="checkbox" name="clip[streamer_ids][]" value="<%= s.id %>" id="streamer_id_<%= s.id %>">
   </p>
-    <% end %>
+    <% end %> -->
 <input type="text" id="clip_streamers_attributes_0_name" name="clip[streamers_attributes][0][name]" />
     </div>
 

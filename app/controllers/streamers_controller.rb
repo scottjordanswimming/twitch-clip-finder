@@ -1,15 +1,30 @@
 class StreamersController < ApplicationController
 
     def index
-       @streamers = Streamer.alpha
+       @streamers = Streamer.all
    end
 
    def new
- @clip = Clip.new
+ @streamer = Streamer.new
  end
 
  def destroy
   session.delete :username
+end
+
+def show
+#  binding.pry
+@streamer = Streamer.find(params[:streamer_id])
+end
+
+def favorites
+
+@streamer = Streamer.find_by(params[:favorite])
+
+end
+
+private def streamer_params
+params.require(:streamer).permit(:name)
 end
 
 end

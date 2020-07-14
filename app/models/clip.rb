@@ -21,4 +21,6 @@ self.clip_streamers.build(:streamer => streamer)
 end
 
 end
+
+
 end

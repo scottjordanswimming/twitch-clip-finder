@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_11_153713) do
+ActiveRecord::Schema.define(version: 2020_07_13_191404) do
 
   create_table "clip_streamers", force: :cascade do |t|
     t.integer "clip_id"
     t.integer "streamer_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "favorite"
   end
 
   create_table "clips", force: :cascade do |t|

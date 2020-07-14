@@ -11,6 +11,7 @@ get '/users', to:'users#index', as: 'users'
   get '/users/:id', to: 'users#show', as: 'user'
   get '/users/:id/edit', to: 'users#edit', as: 'edit_user'
   resources :streamers
+  get '/favorite_streamers' => 'streamers#favorites'
   get '/' => 'sessions#home'
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'

@@ -25,6 +25,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'omniauth'
 gem 'omniauth-github'
 gem 'dotenv-rails'
+gem 'youtube_addy'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
