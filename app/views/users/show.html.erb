@@ -3,8 +3,6 @@
 
 <h3>Here are the clips created by <%=@user.username%>:</h3>
 
-
-
 <% @user.clips.each do |c| %>
 <h3><%= link_to "#{c.title}", clip_path(c)%></h3></br>
 <% end %>

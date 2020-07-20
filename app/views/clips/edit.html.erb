@@ -17,7 +17,19 @@
 </p>
 
 <div>
-  <p>Choose a streamer:</p>
+  Streamers:</br />
+  <ul>
+    <% @clip.streamers.each do |s| %>
+    <li><%= s.name %>" Make favorite?:"<%= check_box_tag 'streamer_favorite[]', checked = false, s.favorite, class: 'clip', :favorite => "streamer_favorite_#{s.favorite}" %></li>
+
+
+    <% end %>
+
+  </ul>
+</div>
+
+<div>
+  <p>Add a streamer:</p>
   <%= f.label :streamer %>
     <%= f.collection_select :streamer_id, Streamer.all, :id, :name, include_blank: 'Select One'%>
 <p>Or create a new streamer:</p>

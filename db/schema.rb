@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_13_191404) do
+ActiveRecord::Schema.define(version: 2020_07_20_195045) do
 
   create_table "clip_streamers", force: :cascade do |t|
     t.integer "clip_id"
@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(version: 2020_07_13_191404) do
     t.integer "clip_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "favorite"
   end
 
   create_table "users", force: :cascade do |t|

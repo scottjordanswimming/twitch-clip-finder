@@ -1,0 +1,5 @@
+<%= form_for :clip do |f| %>
+  <%= f.label "Make a favorite" %>
+  <%= f.collection_check_boxes :streamer_ids, Streamer.all, :id, :name %>
+  <%= f.submit %>
+<% end %>

@@ -10,8 +10,11 @@ frameborder="0"></iframe></br />
 Streamers:</br />
 <ul>
   <% @clip.streamers.each do |s| %>
-  <li><%= s.name %></li>
+  <li><%= s.name %>       Make favorite?:<%= check_box_tag 'streamer_favorite[]', checked = false, s.favorite, class: 'clip', :favorite => "streamer_favorite_#{s.favorite}" %></li>
+
+
   <% end %>
+
 </ul>
 
 <%= link_to "Edit", edit_clip_path(@clip), :class => 'btn btn-default' %>
