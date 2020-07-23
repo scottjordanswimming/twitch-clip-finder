@@ -31,4 +31,4 @@ data: {confirm: 'Are you sure?'},
 
 
 <%= render 'reviews/reviews' %>
-<%= render 'reviews/form' %>
+<%= link_to "Create Review", new_clip_review_path(@clip), :class => 'btn btn-default' %>

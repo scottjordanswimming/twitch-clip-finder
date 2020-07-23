@@ -31032,3 +31032,1975 @@ Processing by ClipsController#index as HTML
 Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.4ms | Allocations: 8332)
 
 
+Started GET "/" for ::1 at 2020-07-22 10:28:39 -0400
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.7ms)[0m  [1m[34mSELECT "clips".* FROM "clips" ORDER BY "clips"."title" ASC[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 8057)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 112ms (Views: 89.1ms | ActiveRecord: 3.1ms | Allocations: 32060)
+
+
+Started GET "/users/1" for ::1 at 2020-07-22 10:34:52 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mClip Load (0.3ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 23.9ms | Allocations: 3388)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 42ms (Views: 38.5ms | ActiveRecord: 0.8ms | Allocations: 11366)
+
+
+Started GET "/clips/new" for ::1 at 2020-07-22 10:35:03 -0400
+Processing by ClipsController#new as HTML
+  Rendering clips/new.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (Duration: 1.2ms | Allocations: 166)
+  [1m[36mStreamer Load (0.7ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers"[0m
+  ↳ app/views/clips/_form.html.erb:19
+  [1m[36mCACHE Streamer Load (0.0ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers"[0m
+  ↳ app/views/clips/_form.html.erb:27
+  Rendered clips/_form.html.erb (Duration: 74.8ms | Allocations: 16664)
+  Rendered clips/new.html.erb within layouts/application (Duration: 77.2ms | Allocations: 16977)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 92ms (Views: 88.5ms | ActiveRecord: 2.1ms | Allocations: 23974)
+
+
+Started POST "/clips" for ::1 at 2020-07-22 10:35:24 -0400
+Processing by ClipsController#create as HTML
+  Parameters: {"authenticity_token"=>"pESW1MFrC7C9qsrcYz2TsNeVLqyqJ4nD6nJf2DjH0cyN+igvVaJ3yIlCyem1qkoAfpn6ZvL5MtSEeUVQtTiLgw==", "clip"=>{"title"=>"Charlotte", "url"=>"www.charlotte.com", "streamer_id"=>"2", "streamers_attributes"=>{"0"=>{"name"=>"Charlotte"}}}, "commit"=>"Save Clip"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mStreamer Load (0.2ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" WHERE "streamers"."name" = ? LIMIT ?[0m  [["name", "Charlotte"], ["LIMIT", 1]]
+  ↳ app/models/clip.rb:20:in `block in streamers_attributes='
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/clip.rb:20:in `block in streamers_attributes='
+  [1m[36mStreamer Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "streamers" WHERE "streamers"."name" = ? LIMIT ?[0m  [["name", "Charlotte"], ["LIMIT", 1]]
+  ↳ app/models/clip.rb:20:in `block in streamers_attributes='
+  [1m[36mStreamer Create (0.9ms)[0m  [1m[32mINSERT INTO "streamers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Charlotte"], ["created_at", "2020-07-22 14:35:24.342260"], ["updated_at", "2020-07-22 14:35:24.342260"]]
+  ↳ app/models/clip.rb:20:in `block in streamers_attributes='
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/clip.rb:20:in `block in streamers_attributes='
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clips_controller.rb:24:in `create'
+  [1m[36mClip Create (0.5ms)[0m  [1m[32mINSERT INTO "clips" ("title", "url", "streamer_id", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Charlotte"], ["url", "www.charlotte.com"], ["streamer_id", 2], ["user_id", 1], ["created_at", "2020-07-22 14:35:24.355985"], ["updated_at", "2020-07-22 14:35:24.355985"]]
+  ↳ app/controllers/clips_controller.rb:24:in `create'
+  [1m[36mClipStreamer Create (0.5ms)[0m  [1m[32mINSERT INTO "clip_streamers" ("clip_id", "streamer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["clip_id", 15], ["streamer_id", 11], ["created_at", "2020-07-22 14:35:24.358764"], ["updated_at", "2020-07-22 14:35:24.358764"]]
+  ↳ app/controllers/clips_controller.rb:24:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clips_controller.rb:24:in `create'
+Redirected to http://localhost:3000/clips/15
+Completed 302 Found in 26ms (ActiveRecord: 4.3ms | Allocations: 14771)
+
+
+Started GET "/clips/15" for ::1 at 2020-07-22 10:35:24 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:12:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mStreamer Load (0.2ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" INNER JOIN "clip_streamers" ON "streamers"."id" = "clip_streamers"."streamer_id" WHERE "clip_streamers"."clip_id" = ?[0m  [["clip_id", 15]]
+  ↳ app/views/clips/show.html.erb:12
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 15]]
+  ↳ app/views/reviews/_reviews.html.erb:3
+  Rendered reviews/_reviews.html.erb (Duration: 7.4ms | Allocations: 3127)
+  Rendered reviews/_form.html.erb (Duration: 14.2ms | Allocations: 8027)
+  Rendered clips/show.html.erb within layouts/application (Duration: 28.5ms | Allocations: 13798)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 41ms (Views: 37.3ms | ActiveRecord: 1.9ms | Allocations: 21417)
+
+
+Started GET "/users/1" for ::1 at 2020-07-22 10:35:36 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mClip Load (0.3ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1032)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 22ms (Views: 18.3ms | ActiveRecord: 0.9ms | Allocations: 8509)
+
+
+Started GET "/clips/15" for ::1 at 2020-07-22 10:35:42 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:12:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mStreamer Load (0.2ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" INNER JOIN "clip_streamers" ON "streamers"."id" = "clip_streamers"."streamer_id" WHERE "clip_streamers"."clip_id" = ?[0m  [["clip_id", 15]]
+  ↳ app/views/clips/show.html.erb:12
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 15]]
+  ↳ app/views/reviews/_reviews.html.erb:3
+  Rendered reviews/_reviews.html.erb (Duration: 2.1ms | Allocations: 750)
+  Rendered reviews/_form.html.erb (Duration: 2.0ms | Allocations: 829)
+  Rendered clips/show.html.erb within layouts/application (Duration: 7.4ms | Allocations: 2792)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 0.9ms | Allocations: 10248)
+
+
+Started POST "/clips/15/reviews" for ::1 at 2020-07-22 10:35:51 -0400
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"XWDQL9PzVjHqrhJoK27qtltKTfpkOIqZIEZk8SNgh0LgcoO2UJYOwr+VcuW4JZl2+mljaebF6LaLbjfxnV7omg==", "review"=>{"title"=>"charlotte's review", "body"=>"review"}, "commit"=>"Create Review", "clip_id"=>"15"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:11:in `create'
+  [1m[36mReview Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "reviews" WHERE "reviews"."clip_id" = ? AND "reviews"."id" IS NULL LIMIT ?[0m  [["clip_id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:11:in `create'
+  [1m[36mReview Create (0.6ms)[0m  [1m[32mINSERT INTO "reviews" ("title", "created_at", "updated_at", "body", "clip_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "charlotte's review"], ["created_at", "2020-07-22 14:35:51.107801"], ["updated_at", "2020-07-22 14:35:51.107801"], ["body", "review"], ["clip_id", 15]]
+  ↳ app/controllers/reviews_controller.rb:11:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:11:in `create'
+Redirected to http://localhost:3000/clips/15
+Completed 302 Found in 12ms (ActiveRecord: 1.8ms | Allocations: 5901)
+
+
+Started GET "/clips/15" for ::1 at 2020-07-22 10:35:51 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:12:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mStreamer Load (0.2ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" INNER JOIN "clip_streamers" ON "streamers"."id" = "clip_streamers"."streamer_id" WHERE "clip_streamers"."clip_id" = ?[0m  [["clip_id", 15]]
+  ↳ app/views/clips/show.html.erb:12
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 15]]
+  ↳ app/views/reviews/_reviews.html.erb:3
+  Rendered reviews/_reviews.html.erb (Duration: 1.4ms | Allocations: 884)
+  Rendered reviews/_form.html.erb (Duration: 1.5ms | Allocations: 829)
+  Rendered clips/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2925)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 19ms (Views: 15.9ms | ActiveRecord: 0.7ms | Allocations: 10373)
+
+
+Started DELETE "/clips/15/reviews/6" for ::1 at 2020-07-22 10:35:55 -0400
+Processing by ReviewsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"HZuExeFcqytAcbWPnbyu94xRmTaZPKEOMy3xLN9x2Cd4rCDedJf3DF0Op7oFb0s5hTo3p6fbwMx/NUex+ODIHA==", "clip_id"=>"15", "id"=>"6"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:18:in `destroy'
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ? AND "reviews"."id" = ? LIMIT ?[0m  [["clip_id", 15], ["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:19:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `destroy'
+  [1m[36mReview Destroy (0.5ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/reviews_controller.rb:20:in `destroy'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:20:in `destroy'
+Redirected to http://localhost:3000/clips/15
+Completed 302 Found in 8ms (ActiveRecord: 2.0ms | Allocations: 3661)
+
+
+Started GET "/clips/15" for ::1 at 2020-07-22 10:35:55 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:12:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mStreamer Load (0.1ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" INNER JOIN "clip_streamers" ON "streamers"."id" = "clip_streamers"."streamer_id" WHERE "clip_streamers"."clip_id" = ?[0m  [["clip_id", 15]]
+  ↳ app/views/clips/show.html.erb:12
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 15]]
+  ↳ app/views/reviews/_reviews.html.erb:3
+  Rendered reviews/_reviews.html.erb (Duration: 1.2ms | Allocations: 750)
+  Rendered reviews/_form.html.erb (Duration: 1.5ms | Allocations: 829)
+  Rendered clips/show.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2790)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 18ms (Views: 15.2ms | ActiveRecord: 0.7ms | Allocations: 10246)
+
+
+Started GET "/clips/15/edit" for ::1 at 2020-07-22 10:36:00 -0400
+Processing by ClipsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:32:in `edit'
+  Rendering clips/edit.html.erb within layouts/application
+  [1m[36mStreamer Load (0.2ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" INNER JOIN "clip_streamers" ON "streamers"."id" = "clip_streamers"."streamer_id" WHERE "clip_streamers"."clip_id" = ?[0m  [["clip_id", 15]]
+  ↳ app/views/clips/edit.html.erb:22
+  [1m[36mStreamer Load (0.2ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers"[0m
+  ↳ app/views/clips/edit.html.erb:34
+  Rendered clips/edit.html.erb within layouts/application (Duration: 8.4ms | Allocations: 3764)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 22ms (Views: 19.6ms | ActiveRecord: 0.7ms | Allocations: 11361)
+
+
+Started PATCH "/clips/15" for ::1 at 2020-07-22 10:36:09 -0400
+Processing by ClipsController#update as HTML
+  Parameters: {"authenticity_token"=>"bcWxGLebZpCe77k631CKiDlG/ME8SkeuCF8ScR043LARnycIyOvRcM6BFJeGPVoc67k3opz+Re37Tvyiev3kqg==", "clip"=>{"title"=>"Charlotte2", "url"=>"www.charlotte2.com", "streamer_id"=>"2", "streamers"=>{"name"=>"sfdasdfasdf"}}, "commit"=>"Save Clip", "id"=>"15"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:36:in `update'
+[31mUnpermitted parameter: :streamers[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clips_controller.rb:37:in `update'
+  [1m[36mClip Update (0.6ms)[0m  [1m[33mUPDATE "clips" SET "title" = ?, "url" = ?, "updated_at" = ? WHERE "clips"."id" = ?[0m  [["title", "Charlotte2"], ["url", "www.charlotte2.com"], ["updated_at", "2020-07-22 14:36:09.831655"], ["id", 15]]
+  ↳ app/controllers/clips_controller.rb:37:in `update'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clips_controller.rb:37:in `update'
+Redirected to http://localhost:3000/clips/15
+Completed 302 Found in 8ms (ActiveRecord: 1.7ms | Allocations: 4019)
+
+
+Started GET "/clips/15" for ::1 at 2020-07-22 10:36:09 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:12:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mStreamer Load (0.2ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" INNER JOIN "clip_streamers" ON "streamers"."id" = "clip_streamers"."streamer_id" WHERE "clip_streamers"."clip_id" = ?[0m  [["clip_id", 15]]
+  ↳ app/views/clips/show.html.erb:12
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 15]]
+  ↳ app/views/reviews/_reviews.html.erb:3
+  Rendered reviews/_reviews.html.erb (Duration: 1.2ms | Allocations: 752)
+  Rendered reviews/_form.html.erb (Duration: 1.4ms | Allocations: 832)
+  Rendered clips/show.html.erb within layouts/application (Duration: 12.2ms | Allocations: 2796)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 27ms (Views: 24.8ms | ActiveRecord: 0.7ms | Allocations: 10250)
+
+
+Started GET "/clips/15/edit" for ::1 at 2020-07-22 10:36:12 -0400
+Processing by ClipsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:32:in `edit'
+  Rendering clips/edit.html.erb within layouts/application
+  [1m[36mStreamer Load (0.2ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" INNER JOIN "clip_streamers" ON "streamers"."id" = "clip_streamers"."streamer_id" WHERE "clip_streamers"."clip_id" = ?[0m  [["clip_id", 15]]
+  ↳ app/views/clips/edit.html.erb:22
+  [1m[36mStreamer Load (0.1ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers"[0m
+  ↳ app/views/clips/edit.html.erb:34
+  Rendered clips/edit.html.erb within layouts/application (Duration: 6.1ms | Allocations: 3258)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.7ms | Allocations: 10708)
+
+
+Started PATCH "/clips/15" for ::1 at 2020-07-22 10:36:21 -0400
+Processing by ClipsController#update as HTML
+  Parameters: {"authenticity_token"=>"sthCAVf+AAdBISerO3ZvW95VUIkLbtOpROb6iSTb/6DOgtQRKI635xFPigZiG7/PDKqb6qva0eq39xRaQx7Hug==", "clip"=>{"title"=>"Charlotte2", "url"=>"www.charlotte2.com", "streamer_id"=>"4", "streamers"=>{"name"=>""}}, "commit"=>"Save Clip", "id"=>"15"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:36:in `update'
+[31mUnpermitted parameter: :streamers[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clips_controller.rb:37:in `update'
+  [1m[36mClip Update (0.7ms)[0m  [1m[33mUPDATE "clips" SET "streamer_id" = ?, "updated_at" = ? WHERE "clips"."id" = ?[0m  [["streamer_id", 4], ["updated_at", "2020-07-22 14:36:21.199585"], ["id", 15]]
+  ↳ app/controllers/clips_controller.rb:37:in `update'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clips_controller.rb:37:in `update'
+Redirected to http://localhost:3000/clips/15
+Completed 302 Found in 17ms (ActiveRecord: 2.1ms | Allocations: 3497)
+
+
+Started GET "/clips/15" for ::1 at 2020-07-22 10:36:21 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:12:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mStreamer Load (0.3ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" INNER JOIN "clip_streamers" ON "streamers"."id" = "clip_streamers"."streamer_id" WHERE "clip_streamers"."clip_id" = ?[0m  [["clip_id", 15]]
+  ↳ app/views/clips/show.html.erb:12
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 15]]
+  ↳ app/views/reviews/_reviews.html.erb:3
+  Rendered reviews/_reviews.html.erb (Duration: 4.5ms | Allocations: 750)
+  Rendered reviews/_form.html.erb (Duration: 4.0ms | Allocations: 829)
+  Rendered clips/show.html.erb within layouts/application (Duration: 18.1ms | Allocations: 2792)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 50ms (Views: 45.2ms | ActiveRecord: 1.1ms | Allocations: 10254)
+
+
+Started GET "/clips/15/edit" for ::1 at 2020-07-22 10:36:29 -0400
+Processing by ClipsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:32:in `edit'
+  Rendering clips/edit.html.erb within layouts/application
+  [1m[36mStreamer Load (0.2ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" INNER JOIN "clip_streamers" ON "streamers"."id" = "clip_streamers"."streamer_id" WHERE "clip_streamers"."clip_id" = ?[0m  [["clip_id", 15]]
+  ↳ app/views/clips/edit.html.erb:22
+  [1m[36mStreamer Load (0.1ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers"[0m
+  ↳ app/views/clips/edit.html.erb:34
+  Rendered clips/edit.html.erb within layouts/application (Duration: 21.8ms | Allocations: 3260)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 39ms (Views: 34.5ms | ActiveRecord: 0.8ms | Allocations: 10724)
+
+
+Started PATCH "/clips/15" for ::1 at 2020-07-22 10:36:52 -0400
+Processing by ClipsController#update as HTML
+  Parameters: {"authenticity_token"=>"PuSa8Zexg8PiFoCU7+cuIIh22mrxECt0D4aJawXmwRFCvgzh6ME0I7J4LTm2iv60WokRCVGkKTf8l2e4YiP5Cw==", "clip"=>{"title"=>"Charlotte2", "url"=>"www.charlotte2.com", "streamer_id"=>"", "streamers"=>{"name"=>"sfdasdfasdf"}}, "commit"=>"Save Clip", "id"=>"15"}
+  [1m[36mClip Load (0.3ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:36:in `update'
+[31mUnpermitted parameter: :streamers[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clips_controller.rb:37:in `update'
+  [1m[36mClip Update (0.5ms)[0m  [1m[33mUPDATE "clips" SET "streamer_id" = ?, "updated_at" = ? WHERE "clips"."id" = ?[0m  [["streamer_id", nil], ["updated_at", "2020-07-22 14:36:52.638715"], ["id", 15]]
+  ↳ app/controllers/clips_controller.rb:37:in `update'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clips_controller.rb:37:in `update'
+Redirected to http://localhost:3000/clips/15
+Completed 302 Found in 7ms (ActiveRecord: 1.6ms | Allocations: 3486)
+
+
+Started GET "/clips/15" for ::1 at 2020-07-22 10:36:52 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:12:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mStreamer Load (0.2ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" INNER JOIN "clip_streamers" ON "streamers"."id" = "clip_streamers"."streamer_id" WHERE "clip_streamers"."clip_id" = ?[0m  [["clip_id", 15]]
+  ↳ app/views/clips/show.html.erb:12
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 15]]
+  ↳ app/views/reviews/_reviews.html.erb:3
+  Rendered reviews/_reviews.html.erb (Duration: 1.9ms | Allocations: 750)
+  Rendered reviews/_form.html.erb (Duration: 1.5ms | Allocations: 829)
+  Rendered clips/show.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2790)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 1.1ms | Allocations: 10248)
+
+
+Started GET "/clips/15/edit" for ::1 at 2020-07-22 10:36:55 -0400
+Processing by ClipsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:32:in `edit'
+  Rendering clips/edit.html.erb within layouts/application
+  [1m[36mStreamer Load (0.2ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" INNER JOIN "clip_streamers" ON "streamers"."id" = "clip_streamers"."streamer_id" WHERE "clip_streamers"."clip_id" = ?[0m  [["clip_id", 15]]
+  ↳ app/views/clips/edit.html.erb:22
+  [1m[36mStreamer Load (0.2ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers"[0m
+  ↳ app/views/clips/edit.html.erb:34
+  Rendered clips/edit.html.erb within layouts/application (Duration: 7.1ms | Allocations: 3254)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 0.9ms | Allocations: 10711)
+
+
+Started GET "/" for ::1 at 2020-07-22 10:37:29 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.4ms)[0m  [1m[34mSELECT "clips".* FROM "clips" ORDER BY "clips"."title" ASC[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1487)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.6ms | Allocations: 8421)
+
+
+Started GET "/clips/9" for ::1 at 2020-07-22 10:37:39 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:12:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mStreamer Load (0.2ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" INNER JOIN "clip_streamers" ON "streamers"."id" = "clip_streamers"."streamer_id" WHERE "clip_streamers"."clip_id" = ?[0m  [["clip_id", 9]]
+  ↳ app/views/clips/show.html.erb:12
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 9]]
+  ↳ app/views/reviews/_reviews.html.erb:3
+  Rendered reviews/_reviews.html.erb (Duration: 2.2ms | Allocations: 873)
+  Rendered reviews/_form.html.erb (Duration: 2.7ms | Allocations: 829)
+  Rendered clips/show.html.erb within layouts/application (Duration: 9.3ms | Allocations: 3036)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 0.8ms | Allocations: 10500)
+
+
+Started GET "/clips/9" for ::1 at 2020-07-22 10:37:47 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:12:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mStreamer Load (0.2ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" INNER JOIN "clip_streamers" ON "streamers"."id" = "clip_streamers"."streamer_id" WHERE "clip_streamers"."clip_id" = ?[0m  [["clip_id", 9]]
+  ↳ app/views/clips/show.html.erb:12
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 9]]
+  ↳ app/views/reviews/_reviews.html.erb:3
+  Rendered reviews/_reviews.html.erb (Duration: 1.3ms | Allocations: 870)
+  Rendered reviews/_form.html.erb (Duration: 1.2ms | Allocations: 829)
+  Rendered clips/show.html.erb within layouts/application (Duration: 4.6ms | Allocations: 3033)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.6ms | Allocations: 10487)
+
+
+Started GET "/" for ::1 at 2020-07-22 10:39:58 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" ORDER BY "clips"."title" ASC[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1467)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.4ms | Allocations: 8390)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-07-22 10:40:04 -0400
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/sjordan/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/sjordan/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.3.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (Duration: 33.1ms | Allocations: 10832)
+  Rendered /Users/sjordan/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.3.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 3.7ms | Allocations: 814)
+  Rendered /Users/sjordan/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 42.0ms | Allocations: 17583)
+Completed 200 OK in 46ms (Views: 44.1ms | ActiveRecord: 0.0ms | Allocations: 18932)
+
+
+Started DELETE "/sessions" for ::1 at 2020-07-22 10:45:29 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"m0SeG+Cbq8jpAo7bepaPX0ob4PAb44RCGRSu5wqiSO/+czoAdVD37/R9nO7iRWqRQ3BOYSUE5YBVDBh6LTNY1A=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 308)
+
+
+Started GET "/" for ::1 at 2020-07-22 10:45:29 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" ORDER BY "clips"."title" ASC[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1651)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.5ms | Allocations: 8980)
+
+
+Started GET "/users/new" for ::1 at 2020-07-22 10:46:31 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 15.1ms | Allocations: 3564)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.1ms | Allocations: 10169)
+
+
+Started POST "/users" for ::1 at 2020-07-22 10:50:53 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"hL5aLtb5K2Hl3l71W1iAGjTsWVMSx9vuEh6xDCQsAXEQeo5JIPI+E2uq6x5lhy1tfPu/MfPtLmseWdYRAGJgvA==", "user"=>{"username"=>"Charlotte", "email"=>"charlotte@email.com", "password"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Charlotte"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  [1m[36mCACHE User Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Charlotte"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "Charlotte"], ["email", "charlotte@email.com"], ["password_digest", "$2a$12$BR3CkiaN/xLDcaKKmR/cUO8KIEbEArSY9aE6Io9EjKIHUH11wNldK"], ["created_at", "2020-07-22 14:50:53.675279"], ["updated_at", "2020-07-22 14:50:53.675279"]]
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+Redirected to http://localhost:3000/users/5
+Completed 302 Found in 248ms (ActiveRecord: 1.7ms | Allocations: 4837)
+
+
+Started GET "/" for ::1 at 2020-07-22 10:51:07 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" ORDER BY "clips"."title" ASC[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1471)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.5ms | Allocations: 8387)
+
+
+Started GET "/users/5" for ::1 at 2020-07-22 10:51:09 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 902)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 0.5ms | Allocations: 8507)
+
+
+Started GET "/" for ::1 at 2020-07-22 10:51:11 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" ORDER BY "clips"."title" ASC[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1471)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.5ms | Allocations: 8385)
+
+
+Started GET "/users/5" for ::1 at 2020-07-22 10:51:12 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mClip Load (0.3ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."user_id" = ?[0m  [["user_id", 5]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 736)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 27ms (Views: 17.3ms | ActiveRecord: 0.6ms | Allocations: 8189)
+
+
+Started DELETE "/sessions" for ::1 at 2020-07-22 10:51:16 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NexRGnn63voklmQFaJib4UGUSXiDXua69JpeNihkii5NLAeJeV4zC9f8wG7qiitwER3ds7DNbavFj3VeilLAGQ=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 286)
+
+
+Started GET "/" for ::1 at 2020-07-22 10:51:16 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" ORDER BY "clips"."title" ASC[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1466)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.3ms | Allocations: 7589)
+
+
+Started GET "/users/new" for ::1 at 2020-07-22 10:51:23 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 772)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.2ms | Allocations: 6905)
+
+
+Started POST "/users" for ::1 at 2020-07-22 10:51:51 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"m8NVgcFjpQTor6EHxoF4GYPVXefX71PXpquii8mwDxuDNXp0cjSi1O4uxeNgVo4raxBI5xU+79IHyO5fAGmHNg==", "user"=>{"username"=>"", "email"=>"another@email.com", "password"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:11:in `create'
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 779)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 265ms (Views: 10.9ms | ActiveRecord: 0.4ms | Allocations: 8331)
+
+
+Started GET "/login" for ::1 at 2020-07-22 10:52:09 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1711)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.2ms | Allocations: 8420)
+
+
+Started GET "/" for ::1 at 2020-07-22 10:54:07 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" ORDER BY "clips"."title" ASC[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1471)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.4ms | Allocations: 7610)
+
+
+Started GET "/clips/new" for ::1 at 2020-07-22 10:54:10 -0400
+Processing by ClipsController#new as HTML
+  Rendering clips/new.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (Duration: 0.4ms | Allocations: 160)
+  [1m[36mStreamer Load (0.2ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers"[0m
+  ↳ app/views/clips/_form.html.erb:19
+  [1m[36mCACHE Streamer Load (0.0ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers"[0m
+  ↳ app/views/clips/_form.html.erb:27
+  Rendered clips/_form.html.erb (Duration: 7.9ms | Allocations: 4794)
+  Rendered clips/new.html.erb within layouts/application (Duration: 9.0ms | Allocations: 5102)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 20ms (Views: 17.6ms | ActiveRecord: 0.3ms | Allocations: 11366)
+
+
+Started POST "/clips" for ::1 at 2020-07-22 10:54:21 -0400
+Processing by ClipsController#create as HTML
+  Parameters: {"authenticity_token"=>"9zZr1TBxY+Exxdw/c5OXxM9JRwAbhG4jiMCO4YFuGpVYMf+Fj5S8pMJRGvBE9IixXKgj8e/MS58gIdJSvSLgHg==", "clip"=>{"title"=>"", "url"=>"www.url.com", "streamer_id"=>"1", "streamers_attributes"=>{"0"=>{"name"=>""}}}, "commit"=>"Save Clip"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.1ms | Allocations: 1736)
+
+
+  
+NoMethodError (undefined method `clips' for nil:NilClass):
+  
+app/controllers/clips_controller.rb:21:in `create'
+Started POST "/clips" for ::1 at 2020-07-22 10:54:56 -0400
+Processing by ClipsController#create as HTML
+  Parameters: {"authenticity_token"=>"j9wjmliT4SWnTujcV+88wvGpoKaO3afkqGIQ+WpTwxF7q49GbhECh3An/SqSfcefiIZUkvBaF0lAc46CJnHGdQ==", "clip"=>{"title"=>"12", "url"=>"www.url.com", "streamer_id"=>"1", "streamers_attributes"=>{"0"=>{"name"=>""}}}, "commit"=>"Save Clip"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 1696)
+
+
+  
+NoMethodError (undefined method `clips' for nil:NilClass):
+  
+app/controllers/clips_controller.rb:21:in `create'
+Started POST "/clips" for ::1 at 2020-07-22 10:55:26 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ClipsController#create as HTML
+  Parameters: {"authenticity_token"=>"j9wjmliT4SWnTujcV+88wvGpoKaO3afkqGIQ+WpTwxF7q49GbhECh3An/SqSfcefiIZUkvBaF0lAc46CJnHGdQ==", "clip"=>{"title"=>"12", "url"=>"www.url.com", "streamer_id"=>"1", "streamers_attributes"=>{"0"=>{"name"=>""}}}, "commit"=>"Save Clip"}
+  [1m[36mStreamer Load (0.2ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" WHERE "streamers"."name" = ? LIMIT ?[0m  [["name", ""], ["LIMIT", 1]]
+  ↳ app/models/clip.rb:20:in `block in streamers_attributes='
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/clip.rb:20:in `block in streamers_attributes='
+  [1m[36mStreamer Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "streamers" WHERE "streamers"."name" = ? LIMIT ?[0m  [["name", ""], ["LIMIT", 1]]
+  ↳ app/models/clip.rb:20:in `block in streamers_attributes='
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/models/clip.rb:20:in `block in streamers_attributes='
+  Rendering clips/new.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (Duration: 0.3ms | Allocations: 147)
+  [1m[36mStreamer Load (0.4ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers"[0m
+  ↳ app/views/clips/_form.html.erb:19
+  [1m[36mCACHE Streamer Load (0.0ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers"[0m
+  ↳ app/views/clips/_form.html.erb:27
+  Rendered clips/_form.html.erb (Duration: 10.3ms | Allocations: 6748)
+  Rendered clips/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 7009)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 95ms (Views: 33.9ms | ActiveRecord: 4.2ms | Allocations: 44717)
+
+
+Started POST "/clips" for ::1 at 2020-07-22 10:55:40 -0400
+Processing by ClipsController#create as HTML
+  Parameters: {"authenticity_token"=>"j9wjmliT4SWnTujcV+88wvGpoKaO3afkqGIQ+WpTwxF7q49GbhECh3An/SqSfcefiIZUkvBaF0lAc46CJnHGdQ==", "clip"=>{"title"=>"12", "url"=>"www.url.com", "streamer_id"=>"1", "streamers_attributes"=>{"0"=>{"name"=>""}}}, "commit"=>"Save Clip"}
+  [1m[36mStreamer Load (0.2ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" WHERE "streamers"."name" = ? LIMIT ?[0m  [["name", ""], ["LIMIT", 1]]
+  ↳ app/models/clip.rb:20:in `block in streamers_attributes='
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/clip.rb:20:in `block in streamers_attributes='
+  [1m[36mStreamer Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "streamers" WHERE "streamers"."name" = ? LIMIT ?[0m  [["name", ""], ["LIMIT", 1]]
+  ↳ app/models/clip.rb:20:in `block in streamers_attributes='
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/models/clip.rb:20:in `block in streamers_attributes='
+  Rendering clips/new.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (Duration: 0.2ms | Allocations: 141)
+  [1m[36mStreamer Load (0.2ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers"[0m
+  ↳ app/views/clips/_form.html.erb:19
+  [1m[36mCACHE Streamer Load (0.0ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers"[0m
+  ↳ app/views/clips/_form.html.erb:27
+  Rendered clips/_form.html.erb (Duration: 5.4ms | Allocations: 4197)
+  Rendered clips/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 4262)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 22ms (Views: 14.0ms | ActiveRecord: 0.8ms | Allocations: 16002)
+
+
+Started POST "/clips" for ::1 at 2020-07-22 10:56:21 -0400
+Processing by ClipsController#create as HTML
+  Parameters: {"authenticity_token"=>"r6SUTrbYLjIp8J3IuVyb3T8AXYF1rA0BH96Jc6LBgrxb0ziSgFrNkP6ZiD58zmCARi+ptQsrvaz3zxcI7uOH2A==", "clip"=>{"title"=>"new strearme", "url"=>"www.url.com", "streamer_id"=>"", "streamers_attributes"=>{"0"=>{"name"=>"Donald Trump"}}}, "commit"=>"Save Clip"}
+  [1m[36mStreamer Load (0.1ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" WHERE "streamers"."name" = ? LIMIT ?[0m  [["name", "Donald Trump"], ["LIMIT", 1]]
+  ↳ app/models/clip.rb:20:in `block in streamers_attributes='
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/clip.rb:20:in `block in streamers_attributes='
+  [1m[36mStreamer Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "streamers" WHERE "streamers"."name" = ? LIMIT ?[0m  [["name", "Donald Trump"], ["LIMIT", 1]]
+  ↳ app/models/clip.rb:20:in `block in streamers_attributes='
+  [1m[36mStreamer Create (0.4ms)[0m  [1m[32mINSERT INTO "streamers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Donald Trump"], ["created_at", "2020-07-22 14:56:21.968194"], ["updated_at", "2020-07-22 14:56:21.968194"]]
+  ↳ app/models/clip.rb:20:in `block in streamers_attributes='
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/clip.rb:20:in `block in streamers_attributes='
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clips_controller.rb:24:in `create'
+  [1m[36mClip Create (0.5ms)[0m  [1m[32mINSERT INTO "clips" ("title", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "new strearme"], ["url", "www.url.com"], ["created_at", "2020-07-22 14:56:21.972539"], ["updated_at", "2020-07-22 14:56:21.972539"]]
+  ↳ app/controllers/clips_controller.rb:24:in `create'
+  [1m[36mClipStreamer Create (0.2ms)[0m  [1m[32mINSERT INTO "clip_streamers" ("clip_id", "streamer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["clip_id", 16], ["streamer_id", 12], ["created_at", "2020-07-22 14:56:21.975496"], ["updated_at", "2020-07-22 14:56:21.975496"]]
+  ↳ app/controllers/clips_controller.rb:24:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clips_controller.rb:24:in `create'
+Redirected to http://localhost:3000/clips/16
+Completed 302 Found in 16ms (ActiveRecord: 3.5ms | Allocations: 9095)
+
+
+Started GET "/clips/16" for ::1 at 2020-07-22 10:56:21 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mClip Load (0.3ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:12:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mStreamer Load (0.2ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" INNER JOIN "clip_streamers" ON "streamers"."id" = "clip_streamers"."streamer_id" WHERE "clip_streamers"."clip_id" = ?[0m  [["clip_id", 16]]
+  ↳ app/views/clips/show.html.erb:12
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 16]]
+  ↳ app/views/reviews/_reviews.html.erb:3
+  Rendered reviews/_reviews.html.erb (Duration: 12.2ms | Allocations: 5285)
+  Rendered reviews/_form.html.erb (Duration: 12.0ms | Allocations: 7718)
+  Rendered clips/show.html.erb within layouts/application (Duration: 28.1ms | Allocations: 15093)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 40ms (Views: 35.6ms | ActiveRecord: 1.6ms | Allocations: 21927)
+
+
+Started GET "/clips/16" for ::1 at 2020-07-22 11:00:06 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:12:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mStreamer Load (0.1ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" INNER JOIN "clip_streamers" ON "streamers"."id" = "clip_streamers"."streamer_id" WHERE "clip_streamers"."clip_id" = ?[0m  [["clip_id", 16]]
+  ↳ app/views/clips/show.html.erb:12
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 16]]
+  ↳ app/views/reviews/_reviews.html.erb:3
+  Rendered reviews/_reviews.html.erb (Duration: 1.1ms | Allocations: 750)
+  Rendered reviews/_form.html.erb (Duration: 1.3ms | Allocations: 829)
+  Rendered clips/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2792)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.5ms | Allocations: 9459)
+
+
+Started GET "/login" for ::1 at 2020-07-22 11:00:13 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1521)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 20ms (Views: 11.6ms | ActiveRecord: 0.7ms | Allocations: 12580)
+
+
+Started POST "/login" for ::1 at 2020-07-22 11:00:24 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"ttj3wq2gdELl+i2OaNVfgXHCUgKAs43WtH+Ay0f0OvgbP2srhF64SUjQp9rPLR2ME8uRG3UCKsRxjRf5CF513Q==", "user"=>{"username"=>"Scott", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Scott"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:18:in `create'
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 250ms (ActiveRecord: 0.3ms | Allocations: 1075)
+
+
+Started GET "/" for ::1 at 2020-07-22 11:00:27 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.4ms)[0m  [1m[34mSELECT "clips".* FROM "clips" ORDER BY "clips"."title" ASC[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1540)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 35ms (Views: 32.6ms | ActiveRecord: 0.8ms | Allocations: 8580)
+
+
+Started GET "/users/1" for ::1 at 2020-07-22 11:00:28 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mClip Load (0.5ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1803)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 16ms (Views: 13.3ms | ActiveRecord: 0.9ms | Allocations: 9317)
+
+
+Started GET "/users/1" for ::1 at 2020-07-22 11:00:38 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `show'
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.erb:6
+  Rendered users/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1027)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.6ms | Allocations: 8477)
+
+
+Started DELETE "/sessions" for ::1 at 2020-07-22 11:01:28 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ru52/rnXs7lt0440sRg1X/eNgIHTMNsvYcmPQLneYDhamdoij1VQG7q6m8J0is4CjqJ0ta23a4KJ2BE79fxlXA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started GET "/" for ::1 at 2020-07-22 11:01:28 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" ORDER BY "clips"."title" ASC[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1518)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.3ms | Allocations: 7640)
+
+
+Started GET "/auth/github" for ::1 at 2020-07-22 11:01:30 -0400
+Started GET "/auth/github" for ::1 at 2020-07-22 11:01:30 -0400
+Started GET "/" for ::1 at 2020-07-22 11:01:45 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" ORDER BY "clips"."title" ASC[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1518)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.3ms | Allocations: 7574)
+
+
+Started GET "/auth/github" for ::1 at 2020-07-22 11:01:47 -0400
+Started GET "/auth/github" for ::1 at 2020-07-22 11:01:47 -0400
+Started GET "/auth/github" for ::1 at 2020-07-22 11:02:14 -0400
+Started GET "/auth/github" for ::1 at 2020-07-22 11:02:14 -0400
+Started GET "/" for ::1 at 2020-07-22 11:02:52 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" ORDER BY "clips"."title" ASC[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1518)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.3ms | Allocations: 7659)
+
+
+Started GET "/clips/9" for ::1 at 2020-07-22 11:05:52 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:12:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mStreamer Load (0.4ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" INNER JOIN "clip_streamers" ON "streamers"."id" = "clip_streamers"."streamer_id" WHERE "clip_streamers"."clip_id" = ?[0m  [["clip_id", 9]]
+  ↳ app/views/clips/show.html.erb:12
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 9]]
+  ↳ app/views/reviews/_reviews.html.erb:3
+  Rendered reviews/_reviews.html.erb (Duration: 2.3ms | Allocations: 883)
+  Rendered reviews/_form.html.erb (Duration: 2.8ms | Allocations: 829)
+  Rendered clips/show.html.erb within layouts/application (Duration: 9.5ms | Allocations: 3046)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 1.0ms | Allocations: 9715)
+
+
+Started GET "/login" for ::1 at 2020-07-22 11:13:58 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1521)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 20ms (Views: 10.6ms | ActiveRecord: 0.2ms | Allocations: 14927)
+
+
+Started POST "/login" for ::1 at 2020-07-22 11:14:06 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"mHoAGWLyStWBMsaBMvG0A5yIzA09S521ifA8SPzmiFi5giHg1ZqVI+CemTs3hBUHVvexYshKXXb3zZeQ+X0y7g==", "user"=>{"username"=>"Scott", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "Scott"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:18:in `create'
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 255ms (ActiveRecord: 0.3ms | Allocations: 1096)
+
+
+Started GET "/" for ::1 at 2020-07-22 11:14:11 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.4ms)[0m  [1m[34mSELECT "clips".* FROM "clips" ORDER BY "clips"."title" ASC[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 6367)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 41ms (Views: 29.2ms | ActiveRecord: 0.7ms | Allocations: 15987)
+
+
+Started GET "/clips/new" for ::1 at 2020-07-22 11:14:12 -0400
+Processing by ClipsController#new as HTML
+  Rendering clips/new.html.erb within layouts/application
+  Rendered layouts/_errors.html.erb (Duration: 0.0ms | Allocations: 15)
+  [1m[36mStreamer Load (0.6ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers"[0m
+  ↳ app/views/clips/_form.html.erb:19
+  [1m[36mCACHE Streamer Load (0.0ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers"[0m
+  ↳ app/views/clips/_form.html.erb:27
+  Rendered clips/_form.html.erb (Duration: 26.4ms | Allocations: 12301)
+  Rendered clips/new.html.erb within layouts/application (Duration: 26.7ms | Allocations: 12366)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.8ms | Allocations: 19194)
+
+
+Started POST "/clips" for ::1 at 2020-07-22 11:14:29 -0400
+Processing by ClipsController#create as HTML
+  Parameters: {"authenticity_token"=>"Rxo7davTaYlJsxqlnxQ8KgBRtCzsasUzq2u2KZxOJjSQbhFQxsSoW34TwcOQFcjlvwulOmZiitZOWP9KoOjYLA==", "clip"=>{"title"=>"anotheroneone", "url"=>"www.111.com", "streamer_id"=>"", "streamers_attributes"=>{"0"=>{"name"=>"Ivanka Trump"}}}, "commit"=>"Save Clip"}
+  [1m[36mStreamer Load (0.2ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" WHERE "streamers"."name" = ? LIMIT ?[0m  [["name", "Ivanka Trump"], ["LIMIT", 1]]
+  ↳ app/models/clip.rb:20:in `block in streamers_attributes='
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/clip.rb:20:in `block in streamers_attributes='
+  [1m[36mStreamer Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "streamers" WHERE "streamers"."name" = ? LIMIT ?[0m  [["name", "Ivanka Trump"], ["LIMIT", 1]]
+  ↳ app/models/clip.rb:20:in `block in streamers_attributes='
+  [1m[36mStreamer Create (0.6ms)[0m  [1m[32mINSERT INTO "streamers" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Ivanka Trump"], ["created_at", "2020-07-22 15:14:29.650531"], ["updated_at", "2020-07-22 15:14:29.650531"]]
+  ↳ app/models/clip.rb:20:in `block in streamers_attributes='
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/clip.rb:20:in `block in streamers_attributes='
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clips_controller.rb:24:in `create'
+  [1m[36mClip Create (0.8ms)[0m  [1m[32mINSERT INTO "clips" ("title", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "anotheroneone"], ["url", "www.111.com"], ["created_at", "2020-07-22 15:14:29.660922"], ["updated_at", "2020-07-22 15:14:29.660922"]]
+  ↳ app/controllers/clips_controller.rb:24:in `create'
+  [1m[36mClipStreamer Create (0.3ms)[0m  [1m[32mINSERT INTO "clip_streamers" ("clip_id", "streamer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["clip_id", 17], ["streamer_id", 13], ["created_at", "2020-07-22 15:14:29.664806"], ["updated_at", "2020-07-22 15:14:29.664806"]]
+  ↳ app/controllers/clips_controller.rb:24:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clips_controller.rb:24:in `create'
+Redirected to http://localhost:3000/clips/17
+Completed 302 Found in 25ms (ActiveRecord: 4.4ms | Allocations: 13253)
+
+
+Started GET "/clips/17" for ::1 at 2020-07-22 11:14:29 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:12:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mStreamer Load (0.2ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" INNER JOIN "clip_streamers" ON "streamers"."id" = "clip_streamers"."streamer_id" WHERE "clip_streamers"."clip_id" = ?[0m  [["clip_id", 17]]
+  ↳ app/views/clips/show.html.erb:12
+  [1m[36mReview Load (0.6ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 17]]
+  ↳ app/views/reviews/_reviews.html.erb:3
+  Rendered reviews/_reviews.html.erb (Duration: 15.9ms | Allocations: 4841)
+  Rendered reviews/_form.html.erb (Duration: 12.0ms | Allocations: 7354)
+  Rendered clips/show.html.erb within layouts/application (Duration: 30.0ms | Allocations: 13714)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 43ms (Views: 40.1ms | ActiveRecord: 1.1ms | Allocations: 21196)
+
+
+Started GET "/" for ::1 at 2020-07-22 11:16:18 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" ORDER BY "clips"."title" ASC[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1570)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.4ms | Allocations: 8492)
+
+
+Started GET "/clips/1/reviews" for ::1 at 2020-07-22 11:17:32 -0400
+Processing by ReviewsController#index as HTML
+  Parameters: {"clip_id"=>"1"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:25:in `index'
+Completed 406 Not Acceptable in 6ms (ActiveRecord: 0.2ms | Allocations: 2656)
+
+
+  
+ActionController::MissingExactTemplate (ReviewsController#index is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.2) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.2) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.2) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+omniauth (1.9.1) lib/omniauth/strategy.rb:192:in `call!'
+omniauth (1.9.1) lib/omniauth/strategy.rb:169:in `call'
+omniauth (1.9.1) lib/omniauth/builder.rb:45:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.3) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.3) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.3) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.3) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/clips/10" for ::1 at 2020-07-22 11:17:40 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mClip Load (0.3ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:12:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mStreamer Load (0.2ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" INNER JOIN "clip_streamers" ON "streamers"."id" = "clip_streamers"."streamer_id" WHERE "clip_streamers"."clip_id" = ?[0m  [["clip_id", 10]]
+  ↳ app/views/clips/show.html.erb:12
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 10]]
+  ↳ app/views/reviews/_reviews.html.erb:3
+  Rendered reviews/_reviews.html.erb (Duration: 2.3ms | Allocations: 883)
+  Rendered reviews/_form.html.erb (Duration: 1.7ms | Allocations: 829)
+  Rendered clips/show.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2923)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 24ms (Views: 19.4ms | ActiveRecord: 1.2ms | Allocations: 10389)
+
+
+Started POST "/clips/10/reviews" for ::1 at 2020-07-22 11:17:52 -0400
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"imh7BcOjbHybUsiRwOP+G78ABoQgH/+kQzqekMYfc4EQch7nf9inzcDyIbyDI3ldTXsN6qddU/x7sUXoOuveMA==", "review"=>{"title"=>"", "body"=>""}, "commit"=>"Create Review", "clip_id"=>"10"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:11:in `create'
+  [1m[36mReview Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "reviews" WHERE "reviews"."clip_id" = ? AND "reviews"."id" IS NULL LIMIT ?[0m  [["clip_id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:11:in `create'
+  [1m[36mReview Create (0.5ms)[0m  [1m[32mINSERT INTO "reviews" ("title", "created_at", "updated_at", "body", "clip_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", ""], ["created_at", "2020-07-22 15:17:52.284377"], ["updated_at", "2020-07-22 15:17:52.284377"], ["body", ""], ["clip_id", 10]]
+  ↳ app/controllers/reviews_controller.rb:11:in `create'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:11:in `create'
+Redirected to http://localhost:3000/clips/10
+Completed 302 Found in 9ms (ActiveRecord: 2.0ms | Allocations: 5772)
+
+
+Started GET "/clips/10" for ::1 at 2020-07-22 11:17:52 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:12:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mStreamer Load (0.2ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" INNER JOIN "clip_streamers" ON "streamers"."id" = "clip_streamers"."streamer_id" WHERE "clip_streamers"."clip_id" = ?[0m  [["clip_id", 10]]
+  ↳ app/views/clips/show.html.erb:12
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 10]]
+  ↳ app/views/reviews/_reviews.html.erb:3
+  Rendered reviews/_reviews.html.erb (Duration: 2.0ms | Allocations: 990)
+  Rendered reviews/_form.html.erb (Duration: 1.4ms | Allocations: 829)
+  Rendered clips/show.html.erb within layouts/application (Duration: 5.7ms | Allocations: 3030)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 0.9ms | Allocations: 10476)
+
+
+Started GET "/clips/10/reviews/new" for ::1 at 2020-07-22 11:18:12 -0400
+Processing by ReviewsController#new as HTML
+  Parameters: {"clip_id"=>"10"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_form.html.erb (Duration: 1.0ms | Allocations: 1440)
+  Rendered reviews/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1611)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2578)
+
+
+  
+ActionView::Template::Error (undefined method `reviews' for nil:NilClass):
+    1: <h3>Add Review</h3>
+    2: <%= form_for([@clip, @clip.reviews.build]) do |f| %>
+    3: 
+    4: <p>
+    5:   <%= f.label :title %> <br>
+  
+app/views/reviews/_form.html.erb:2
+app/views/reviews/new.html.erb:4
+Started GET "/" for ::1 at 2020-07-22 11:19:07 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.4ms)[0m  [1m[34mSELECT "clips".* FROM "clips" ORDER BY "clips"."title" ASC[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1574)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.7ms | Allocations: 8519)
+
+
+Started GET "/rails/info/routes" for ::1 at 2020-07-22 11:19:14 -0400
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/sjordan/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/sjordan/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.3.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (Duration: 31.0ms | Allocations: 10805)
+  Rendered /Users/sjordan/.rvm/gems/ruby-2.6.1/gems/actionpack-6.0.3.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 1.1ms | Allocations: 709)
+  Rendered /Users/sjordan/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.2/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 36.9ms | Allocations: 17428)
+Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 0.0ms | Allocations: 18696)
+
+
+Started POST "/clips/10/reviews" for ::1 at 2020-07-22 11:21:03 -0400
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"hVWJCjl2dNBsMo0Pr+FziUreewJeicBZA3Tjk+R7qgldV9H7WLi10bUFHMqu7k0KyW6joGjeHTWc7jpy8LJd4Q==", "review"=>{"title"=>"", "body"=>""}, "commit"=>"Create Review", "clip_id"=>"10"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:11:in `create'
+  [1m[36mReview Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "reviews" WHERE "reviews"."clip_id" = ? AND "reviews"."id" IS NULL LIMIT ?[0m  [["clip_id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:11:in `create'
+  [1m[36mReview Create (0.5ms)[0m  [1m[32mINSERT INTO "reviews" ("title", "created_at", "updated_at", "body", "clip_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", ""], ["created_at", "2020-07-22 15:21:03.722493"], ["updated_at", "2020-07-22 15:21:03.722493"], ["body", ""], ["clip_id", 10]]
+  ↳ app/controllers/reviews_controller.rb:11:in `create'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:11:in `create'
+Redirected to http://localhost:3000/clips/10
+Completed 302 Found in 10ms (ActiveRecord: 2.0ms | Allocations: 4974)
+
+
+Started GET "/clips/10" for ::1 at 2020-07-22 11:21:03 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:12:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mStreamer Load (0.2ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" INNER JOIN "clip_streamers" ON "streamers"."id" = "clip_streamers"."streamer_id" WHERE "clip_streamers"."clip_id" = ?[0m  [["clip_id", 10]]
+  ↳ app/views/clips/show.html.erb:12
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 10]]
+  ↳ app/views/reviews/_reviews.html.erb:3
+  Rendered reviews/_reviews.html.erb (Duration: 2.2ms | Allocations: 1115)
+  Rendered reviews/_form.html.erb (Duration: 1.9ms | Allocations: 832)
+  Rendered clips/show.html.erb within layouts/application (Duration: 6.5ms | Allocations: 3164)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 20ms (Views: 17.0ms | ActiveRecord: 1.0ms | Allocations: 10632)
+
+
+Started GET "/" for ::1 at 2020-07-23 10:34:19 -0400
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.3ms)[0m  [1m[34mSELECT "clips".* FROM "clips" ORDER BY "clips"."title" ASC[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 18.2ms | Allocations: 8161)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 135ms (Views: 101.8ms | ActiveRecord: 2.8ms | Allocations: 32291)
+
+
+Started GET "/clips/11" for ::1 at 2020-07-23 10:34:24 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mClip Load (0.4ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:12:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mStreamer Load (0.3ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" INNER JOIN "clip_streamers" ON "streamers"."id" = "clip_streamers"."streamer_id" WHERE "clip_streamers"."clip_id" = ?[0m  [["clip_id", 11]]
+  ↳ app/views/clips/show.html.erb:12
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 11]]
+  ↳ app/views/reviews/_reviews.html.erb:3
+  Rendered reviews/_reviews.html.erb (Duration: 22.1ms | Allocations: 10358)
+  Rendered reviews/_form.html.erb (Duration: 29.2ms | Allocations: 2567)
+  Rendered clips/show.html.erb within layouts/application (Duration: 87.3ms | Allocations: 26104)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 101ms (Views: 95.0ms | ActiveRecord: 2.7ms | Allocations: 33760)
+
+
+Started POST "/clips/11/reviews" for ::1 at 2020-07-23 10:34:43 -0400
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"MExJF1bA/1W8abYDoXbBS1RZObSyLvXvnVB/vCrG7lEXxGiKVAZV2FMJ2upCIo4SueUOFiZoXVmhu9kuOxRiAw==", "review"=>{"title"=>"new title", "body"=>"body of review"}, "commit"=>"Create Review", "clip_id"=>"11"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:9:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:11:in `create'
+  [1m[36mReview Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "reviews" WHERE "reviews"."clip_id" = ? AND "reviews"."id" IS NULL LIMIT ?[0m  [["clip_id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:11:in `create'
+  [1m[36mReview Create (0.5ms)[0m  [1m[32mINSERT INTO "reviews" ("title", "created_at", "updated_at", "body", "clip_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "new title"], ["created_at", "2020-07-23 14:34:43.665087"], ["updated_at", "2020-07-23 14:34:43.665087"], ["body", "body of review"], ["clip_id", 11]]
+  ↳ app/controllers/reviews_controller.rb:11:in `create'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:11:in `create'
+Redirected to http://localhost:3000/clips/11
+Completed 302 Found in 14ms (ActiveRecord: 1.9ms | Allocations: 6137)
+
+
+Started GET "/clips/11" for ::1 at 2020-07-23 10:34:43 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:12:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mStreamer Load (0.2ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" INNER JOIN "clip_streamers" ON "streamers"."id" = "clip_streamers"."streamer_id" WHERE "clip_streamers"."clip_id" = ?[0m  [["clip_id", 11]]
+  ↳ app/views/clips/show.html.erb:12
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 11]]
+  ↳ app/views/reviews/_reviews.html.erb:3
+  Rendered reviews/_reviews.html.erb (Duration: 1.7ms | Allocations: 993)
+  Rendered reviews/_form.html.erb (Duration: 1.5ms | Allocations: 829)
+  Rendered clips/show.html.erb within layouts/application (Duration: 6.2ms | Allocations: 3036)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.7ms | Allocations: 10489)
+
+
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from load at /Users/sjordan/.rvm/gems/ruby-2.6.1/bin/rake:23)
+Started GET "/clips/11" for ::1 at 2020-07-23 10:41:37 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:12:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mStreamer Load (0.3ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" INNER JOIN "clip_streamers" ON "streamers"."id" = "clip_streamers"."streamer_id" WHERE "clip_streamers"."clip_id" = ?[0m  [["clip_id", 11]]
+  ↳ app/views/clips/show.html.erb:12
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 11]]
+  ↳ app/views/reviews/_reviews.html.erb:3
+  Rendered reviews/_reviews.html.erb (Duration: 2.7ms | Allocations: 1190)
+  Rendered clips/show.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2833)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 29ms (Views: 26.3ms | ActiveRecord: 1.1ms | Allocations: 11521)
+
+
+Started GET "/clips/11/reviews/new" for ::1 at 2020-07-23 10:41:42 -0400
+Processing by ReviewsController#new as HTML
+  Parameters: {"clip_id"=>"11"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_form.html.erb (Duration: 36.8ms | Allocations: 4192)
+  Rendered reviews/new.html.erb within layouts/application (Duration: 38.9ms | Allocations: 4502)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.0ms | Allocations: 5468)
+
+
+  
+ActionView::Template::Error (undefined method `reviews' for nil:NilClass):
+    1: <h3>Add Review</h3>
+    2: <%= form_for([@clip, @clip.reviews.build]) do |f| %>
+    3: 
+    4: <p>
+    5:   <%= f.label :title %> <br>
+  
+app/views/reviews/_form.html.erb:2
+app/views/reviews/new.html.erb:4
+Started GET "/clips/11/reviews/new" for ::1 at 2020-07-23 10:42:52 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReviewsController#new as HTML
+  Parameters: {"clip_id"=>"11"}
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_form.html.erb (Duration: 2.6ms | Allocations: 1402)
+  Rendered reviews/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1470)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2054)
+
+
+  
+ActionView::Template::Error (undefined method `reviews' for nil:NilClass):
+    1: <h3>Add Review</h3>
+    2: <%= form_for([@clip, @clip.reviews.build]) do |f| %>
+    3: 
+    4: <p>
+    5:   <%= f.label :title %> <br>
+  
+app/views/reviews/_form.html.erb:2
+app/views/reviews/new.html.erb:4
+Started GET "/clips/11/reviews/new" for ::1 at 2020-07-23 10:43:00 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReviewsController#new as HTML
+  Parameters: {"clip_id"=>"11"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:8:in `new'
+  Rendering reviews/new.html.erb within layouts/application
+  Rendered reviews/_form.html.erb (Duration: 17.9ms | Allocations: 9525)
+  Rendered reviews/new.html.erb within layouts/application (Duration: 18.3ms | Allocations: 9590)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 57ms (Views: 40.2ms | ActiveRecord: 2.4ms | Allocations: 32460)
+
+
+Started POST "/clips/11/reviews" for ::1 at 2020-07-23 10:43:08 -0400
+Processing by ReviewsController#create as HTML
+  Parameters: {"authenticity_token"=>"dGCahOdYfKTK34JVjADAtKlKiRoGbPX1x01mmy3sP++sYsJ1hpa9pRPoE5CND/43KvpRuDA7KJlY1796OSXIBw==", "review"=>{"title"=>"new revview", "body"=>"new body feview"}, "commit"=>"Create Review", "clip_id"=>"11"}
+  [1m[36mClip Load (0.1ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:14:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/reviews_controller.rb:16:in `create'
+  [1m[36mReview Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "reviews" WHERE "reviews"."clip_id" = ? AND "reviews"."id" IS NULL LIMIT ?[0m  [["clip_id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:16:in `create'
+  [1m[36mReview Create (0.4ms)[0m  [1m[32mINSERT INTO "reviews" ("title", "created_at", "updated_at", "body", "clip_id") VALUES (?, ?, ?, ?, ?)[0m  [["title", "new revview"], ["created_at", "2020-07-23 14:43:08.713634"], ["updated_at", "2020-07-23 14:43:08.713634"], ["body", "new body feview"], ["clip_id", 11]]
+  ↳ app/controllers/reviews_controller.rb:16:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/reviews_controller.rb:16:in `create'
+Redirected to http://localhost:3000/clips/11
+Completed 302 Found in 8ms (ActiveRecord: 1.5ms | Allocations: 5747)
+
+
+Started GET "/clips/11" for ::1 at 2020-07-23 10:43:08 -0400
+Processing by ClipsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/clips_controller.rb:12:in `show'
+  Rendering clips/show.html.erb within layouts/application
+  [1m[36mStreamer Load (0.2ms)[0m  [1m[34mSELECT "streamers".* FROM "streamers" INNER JOIN "clip_streamers" ON "streamers"."id" = "clip_streamers"."streamer_id" WHERE "clip_streamers"."clip_id" = ?[0m  [["clip_id", 11]]
+  ↳ app/views/clips/show.html.erb:12
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 11]]
+  ↳ app/views/reviews/_reviews.html.erb:3
+  Rendered reviews/_reviews.html.erb (Duration: 2.1ms | Allocations: 1309)
+  Rendered clips/show.html.erb within layouts/application (Duration: 18.5ms | Allocations: 11015)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 43ms (Views: 39.6ms | ActiveRecord: 1.9ms | Allocations: 18541)
+
+
+Started GET "/clips/11/reviews" for ::1 at 2020-07-23 10:44:15 -0400
+Processing by ReviewsController#index as HTML
+  Parameters: {"clip_id"=>"11"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:30:in `index'
+Completed 406 Not Acceptable in 11ms (ActiveRecord: 0.2ms | Allocations: 2701)
+
+
+  
+ActionController::MissingExactTemplate (ReviewsController#index is missing a template for request formats: text/html):
+  
+actionpack (6.0.3.2) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:195:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.3.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.3.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3.2) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3.2) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3.2) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.3.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+omniauth (1.9.1) lib/omniauth/strategy.rb:192:in `call!'
+omniauth (1.9.1) lib/omniauth/strategy.rb:169:in `call'
+omniauth (1.9.1) lib/omniauth/builder.rb:45:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.3) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.3) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.3) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.3) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/clips/11/reviews/1" for ::1 at 2020-07-23 10:44:24 -0400
+Processing by ReviewsController#show as HTML
+  Parameters: {"clip_id"=>"11", "id"=>"1"}
+  Rendering reviews/show.html.erb within layouts/application
+  Rendered reviews/_reviews.html.erb (Duration: 1.1ms | Allocations: 1415)
+  Rendered reviews/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1608)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2135)
+
+
+  
+ActionView::Template::Error (undefined method `reviews' for nil:NilClass):
+    1: <h3>Reviews</h3>
+    2: 
+    3: <% @clip.reviews.each do |review| %>
+    4: <div class = "Well">
+    5: <p> <strong>Title: <%= review.title %> </p>
+    6: <p>Review:  <%= review.body %> </strong></p>
+  
+app/views/reviews/_reviews.html.erb:3
+app/views/reviews/show.html.erb:4
+Started GET "/clips/11/reviews/1" for ::1 at 2020-07-23 10:45:56 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReviewsController#show as HTML
+  Parameters: {"clip_id"=>"11", "id"=>"1"}
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 5861)
+
+
+  
+NoMethodError (undefined method `reviews' for #<Class:0x00007f82acbde3f0>):
+  
+app/controllers/reviews_controller.rb:30:in `show'
+Started GET "/clips/11/reviews/1" for ::1 at 2020-07-23 10:46:31 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReviewsController#show as HTML
+  Parameters: {"clip_id"=>"11", "id"=>"1"}
+  Rendering reviews/show.html.erb within layouts/application
+  Rendered reviews/_reviews.html.erb (Duration: 1.2ms | Allocations: 1377)
+  Rendered reviews/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1448)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2034)
+
+
+  
+ActionView::Template::Error (undefined method `reviews' for nil:NilClass):
+    1: <h3>Reviews</h3>
+    2: 
+    3: <% @clip.reviews.each do |review| %>
+    4: <div class = "Well">
+    5: <p> <strong>Title: <%= review.title %> </p>
+    6: <p>Review:  <%= review.body %> </strong></p>
+  
+app/views/reviews/_reviews.html.erb:3
+app/views/reviews/show.html.erb:4
+Started GET "/clips/11/reviews/1" for ::1 at 2020-07-23 10:47:40 -0400
+Processing by ReviewsController#show as HTML
+  Parameters: {"clip_id"=>"11", "id"=>"1"}
+  Rendering reviews/show.html.erb within layouts/application
+  Rendered reviews/_reviews.html.erb (Duration: 1.1ms | Allocations: 1426)
+  Rendered reviews/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1497)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1919)
+
+
+  
+ActionView::Template::Error (undefined method `reviews' for nil:NilClass):
+    1: <h3>Reviews</h3>
+    2: 
+    3: <% @clip.reviews.each do |review| %>
+    4: <div class = "Well">
+    5: <p> <strong>Title: <%= review.title %> </p>
+    6: <p>Review:  <%= review.body %> </strong></p>
+  
+app/views/reviews/_reviews.html.erb:3
+app/views/reviews/show.html.erb:4
+Started GET "/clips/11/reviews/2" for ::1 at 2020-07-23 10:47:43 -0400
+Processing by ReviewsController#show as HTML
+  Parameters: {"clip_id"=>"11", "id"=>"2"}
+  Rendering reviews/show.html.erb within layouts/application
+  Rendered reviews/_reviews.html.erb (Duration: 1.1ms | Allocations: 1426)
+  Rendered reviews/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1497)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1919)
+
+
+  
+ActionView::Template::Error (undefined method `reviews' for nil:NilClass):
+    1: <h3>Reviews</h3>
+    2: 
+    3: <% @clip.reviews.each do |review| %>
+    4: <div class = "Well">
+    5: <p> <strong>Title: <%= review.title %> </p>
+    6: <p>Review:  <%= review.body %> </strong></p>
+  
+app/views/reviews/_reviews.html.erb:3
+app/views/reviews/show.html.erb:4
+Started GET "/clips/11/reviews/3" for ::1 at 2020-07-23 10:47:46 -0400
+Processing by ReviewsController#show as HTML
+  Parameters: {"clip_id"=>"11", "id"=>"3"}
+  Rendering reviews/show.html.erb within layouts/application
+  Rendered reviews/_reviews.html.erb (Duration: 1.1ms | Allocations: 1426)
+  Rendered reviews/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1497)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1919)
+
+
+  
+ActionView::Template::Error (undefined method `reviews' for nil:NilClass):
+    1: <h3>Reviews</h3>
+    2: 
+    3: <% @clip.reviews.each do |review| %>
+    4: <div class = "Well">
+    5: <p> <strong>Title: <%= review.title %> </p>
+    6: <p>Review:  <%= review.body %> </strong></p>
+  
+app/views/reviews/_reviews.html.erb:3
+app/views/reviews/show.html.erb:4
+Started GET "/clips/11/reviews/4" for ::1 at 2020-07-23 10:47:48 -0400
+Processing by ReviewsController#show as HTML
+  Parameters: {"clip_id"=>"11", "id"=>"4"}
+  Rendering reviews/show.html.erb within layouts/application
+  Rendered reviews/_reviews.html.erb (Duration: 1.1ms | Allocations: 1426)
+  Rendered reviews/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1497)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1919)
+
+
+  
+ActionView::Template::Error (undefined method `reviews' for nil:NilClass):
+    1: <h3>Reviews</h3>
+    2: 
+    3: <% @clip.reviews.each do |review| %>
+    4: <div class = "Well">
+    5: <p> <strong>Title: <%= review.title %> </p>
+    6: <p>Review:  <%= review.body %> </strong></p>
+  
+app/views/reviews/_reviews.html.erb:3
+app/views/reviews/show.html.erb:4
+Started GET "/clips/11/reviews/4" for ::1 at 2020-07-23 10:48:58 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/Users/sjordan/Desktop/twitch-clip-finder/app/controllers/reviews_controller.rb:31: syntax error, unexpected ':', expecting end
+render: show
+      ^):
+  
+app/controllers/reviews_controller.rb:31: syntax error, unexpected ':', expecting end
+app/controllers/reviews_controller.rb:31: syntax error, unexpected ':', expecting end
+app/controllers/reviews_controller.rb:31: syntax error, unexpected ':', expecting end
+Started GET "/clips/11/reviews/1" for ::1 at 2020-07-23 10:49:02 -0400
+  
+SyntaxError (/Users/sjordan/Desktop/twitch-clip-finder/app/controllers/reviews_controller.rb:31: syntax error, unexpected ':', expecting end
+render: show
+      ^):
+  
+app/controllers/reviews_controller.rb:31: syntax error, unexpected ':', expecting end
+app/controllers/reviews_controller.rb:31: syntax error, unexpected ':', expecting end
+app/controllers/reviews_controller.rb:31: syntax error, unexpected ':', expecting end
+Started GET "/clips/11/reviews/1" for ::1 at 2020-07-23 10:49:17 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReviewsController#show as HTML
+  Parameters: {"clip_id"=>"11", "id"=>"1"}
+  Rendering reviews/show.html.erb within layouts/application
+  Rendered reviews/_reviews.html.erb (Duration: 1.1ms | Allocations: 1413)
+  Rendered reviews/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1484)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2048)
+
+
+  
+ActionView::Template::Error (undefined method `reviews' for nil:NilClass):
+    1: <h3>Reviews</h3>
+    2: 
+    3: <% @clip.reviews.each do |review| %>
+    4: <div class = "Well">
+    5: <p> <strong>Title: <%= review.title %> </p>
+    6: <p>Review:  <%= review.body %> </strong></p>
+  
+app/views/reviews/_reviews.html.erb:3
+app/views/reviews/show.html.erb:4
+app/controllers/reviews_controller.rb:31:in `show'
+Started GET "/clips/11/reviews/1" for ::1 at 2020-07-23 10:50:03 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ReviewsController#show as HTML
+  Parameters: {"clip_id"=>"11", "id"=>"1"}
+  [1m[36mClip Load (0.2ms)[0m  [1m[34mSELECT "clips".* FROM "clips" WHERE "clips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:30:in `show'
+  Rendering reviews/show.html.erb within layouts/application
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."clip_id" = ?[0m  [["clip_id", 1]]
+  ↳ app/views/reviews/_reviews.html.erb:3
+  Rendered reviews/_reviews.html.erb (Duration: 5.7ms | Allocations: 2776)
+  Rendered reviews/_form.html.erb (Duration: 11.5ms | Allocations: 7570)
+  Rendered reviews/show.html.erb within layouts/application (Duration: 17.7ms | Allocations: 10478)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 73ms (Views: 39.1ms | ActiveRecord: 18.5ms | Allocations: 33262)
+
+
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."user_id" = ? LIMIT ?[0m  [["user_id", 1], ["LIMIT", 11]]
+Started DELETE "/sessions" for ::1 at 2020-07-23 10:54:28 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Lo2SzAsyPL7IpwJNXrZV3JxYycxBn3KBtK0FNZS9EML2j8o9avz9vxGQk4hfuWtfH+gRbnfIr+0rN9zUgHTnKg=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 310)
+
+
+Started GET "/" for ::1 at 2020-07-23 10:54:28 -0400
+Processing by ClipsController#index as HTML
+  Rendering clips/index.html.erb within layouts/application
+  [1m[36mClip Load (0.3ms)[0m  [1m[34mSELECT "clips".* FROM "clips" ORDER BY "clips"."title" ASC[0m
+  ↳ app/views/clips/index.html.erb:2
+  Rendered clips/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1796)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `current_user'
+Completed 200 OK in 16ms (Views: 13.5ms | ActiveRecord: 0.5ms | Allocations: 8243)
+
+
+Started GET "/auth/github" for ::1 at 2020-07-23 10:54:29 -0400
+Started GET "/auth/github" for ::1 at 2020-07-23 10:54:30 -0400

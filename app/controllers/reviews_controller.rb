@@ -4,6 +4,11 @@ class ReviewsController < ApplicationController
 #before_action :redirect_if_not_logged_in
 #skip_before_action :redirect_if_not_logged_in, only: [:index]
 
+def new
+@clip = Clip.find(params[:clip_id])
+end
+
+
   def create
 
 @clip = Clip.find(params[:clip_id])
@@ -19,6 +24,11 @@ redirect_to clip_path(@clip)
 @review = @clip.reviews.find(params[:id])
 @review.destroy
 redirect_to clip_path(@clip)
+  end
+
+  def show
+@clip = Clip.find(params[:id])
+
   end
 
   def index
