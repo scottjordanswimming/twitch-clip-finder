@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 root 'clips#index', as: 'home'
-#get 'about' => 'pages#about', as: 'about'
+match '/auth/:github/callback', to: 'sessions#create', via: [:get, :post]
+
 resources :clips do
   resources :reviews
 end
@@ -20,17 +21,9 @@ get '/users', to:'users#index', as: 'users'
   get '/logout' => 'sessions#destroy'
   post '/sessions', to: 'sessions#create', as: 'sessions'
   delete '/sessions/', to: 'sessions#destroy'
-  #post '/clips'
-  # get '/most_popular' => 'clips#most_popular'
-  #
-get '/auth/:provider/callback' => 'sessions#create'
-  #
-  #
-  resources :reviews
-  resources :clips do
-    resources :reviews, only: [:new, :index]
-  end
-  #
+
+
+
   resources :users, only: [:show]
   # # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
