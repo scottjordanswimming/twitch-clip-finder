@@ -1,5 +1,16 @@
 <h1>Clip Finder</h1>
+
 <h2>Welcome to <%= @user.username%>'s homepage! </h2>
+
+<h3>Here are <%= @user.username%>'s favorite streamers:</h3>
+
+<div>
+  <% binding.pry %>
+   <% StreamerUser.all.each do |su| %>
+   <label>
+       <p><%= su %></p>
+   <% end %>
+ </div>
 
 <h3>Here are the clips created by <%=@user.username%>:</h3>
 

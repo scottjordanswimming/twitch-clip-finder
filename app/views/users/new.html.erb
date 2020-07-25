@@ -10,6 +10,18 @@
   <%= f.label :password %>
   <%= f.password_field :password %>
 
+<h1>Pick your favorite streamers!</h1>
+  <div>
+     <% Streamer.all.each do |streamer| %>
+     <label>
+         <%= check_box_tag "user[streamer_ids][]", streamer.id, f.object.streamers.include?(streamer) %>
+         <%= streamer.name %>
+     <% end %>
+   </div>
 
-  <%= f.submit "Sign Up" %>
+
+
+   <div class="actions">
+     <%= f.submit %>
+   </div>
 <% end %>

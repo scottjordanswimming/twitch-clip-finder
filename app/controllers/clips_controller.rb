@@ -1,8 +1,8 @@
 class ClipsController < ApplicationController
-  #http_basic_authenticate_with name: "brad", password:"1234", except: [:index, :show]
 
-#before_action :redirect_if_not_logged_in
-#skip_before_action :redirect_if_not_logged_in, only: [:index]
+
+before_action :redirect_if_not_logged_in
+skip_before_action :redirect_if_not_logged_in, only: [:index]
 
   def index
 @clips = Clip.all

@@ -18,7 +18,7 @@ if auth_hash = request.env["omniauth.auth"]
 
   if user = User.find_by(:email => oauth_email)
 session[:user_id] = user.id
-redirect_to 'home'
+redirect_to '/'
 else
   user = User.new(:username => oauth_name, :email => oauth_email, :password => SecureRandom.hex)
 if user.save
