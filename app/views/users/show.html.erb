@@ -14,5 +14,5 @@
 <div>
    <% StreamerUser.all.each do |su| %>
    <label>
-       <p><%= su.streamer_id %></p>
+       <p><%= su.streamer.name %></p>
    <% end %>
