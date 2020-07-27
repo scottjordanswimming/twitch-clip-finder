@@ -1,8 +1,6 @@
 class User < ApplicationRecord
-has_many :streamers
-  has_many :streamer_users
-  has_many :streamers, through: :streamer_users
-
+  has_many :reviews
+    has_many :reviewed_clips, through: :reviews, source: :clip
   has_many :clips
 
   has_secure_password

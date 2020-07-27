@@ -19,7 +19,7 @@ end
   def create
 #render plain: params[:clip].inspect
 
-@clip = Clip.new(clip_params)
+@clip = current_user.clips.build(clip_params)
 
 if(@clip.save)
 redirect_to @clip

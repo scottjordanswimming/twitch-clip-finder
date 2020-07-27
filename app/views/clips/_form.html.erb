@@ -1,12 +1,10 @@
 <%= render partial: 'layouts/errors', locals: {object: @clip}  %>
 <%= form_for :clip, url: clips_path do |f| %>
 
-
 <p>
   <%= f.label :title %><br>
   <%= f.text_field(:title, {:class => 'form-control'}) %>
 </p>
-
 
 <p>
   <%= f.label :url %><br>
@@ -25,11 +23,7 @@
       <p> Or Create a new streamer:</p>
   <input type="text" id="clip_streamers_attributes_0_name" name="clip[streamers_attributes][0][name]" />
 
-
-
-
-
-    </div>
+</div>
 
 <p>
   <%= f.submit({:class => 'btn btn-primary'}) %>

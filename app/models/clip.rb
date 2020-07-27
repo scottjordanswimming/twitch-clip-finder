@@ -4,7 +4,7 @@ class Clip < ApplicationRecord
   has_many :clip_streamers
   has_many :streamers, {:through=>:clip_streamers, :source=>"streamer"}
   has_many :reviews
-  has_many :users, through: :reviews
+  has_many :users
   #accepts_nested_attributes_for :streamers
 
   validates :title, presence: true,
