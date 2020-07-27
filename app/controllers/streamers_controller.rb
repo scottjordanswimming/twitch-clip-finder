@@ -13,7 +13,6 @@ class StreamersController < ApplicationController
 end
 
 def show
-#  binding.pry
 @streamer = Streamer.find(params[:streamer_id])
 end
 

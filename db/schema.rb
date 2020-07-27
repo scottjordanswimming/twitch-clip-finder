@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_25_174701) do
+ActiveRecord::Schema.define(version: 2020_07_27_144927) do
 
   create_table "clip_streamers", force: :cascade do |t|
     t.integer "clip_id"
@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 2020_07_25_174701) do
   create_table "streamer_users", id: false, force: :cascade do |t|
     t.integer "streamer_id", null: false
     t.integer "user_id", null: false
+    t.boolean "favorite"
     t.index ["streamer_id", "user_id"], name: "index_streamer_users_on_streamer_id_and_user_id"
     t.index ["user_id", "streamer_id"], name: "index_streamer_users_on_user_id_and_streamer_id"
   end
