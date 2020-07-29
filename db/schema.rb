@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_27_144927) do
+ActiveRecord::Schema.define(version: 2020_07_29_172624) do
 
   create_table "clip_streamers", force: :cascade do |t|
     t.integer "clip_id"
@@ -28,6 +28,13 @@ ActiveRecord::Schema.define(version: 2020_07_27_144927) do
     t.integer "review_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "clips_reviews", id: false, force: :cascade do |t|
+    t.integer "review_id", null: false
+    t.integer "clip_id", null: false
+    t.index ["clip_id", "review_id"], name: "index_clips_reviews_on_clip_id_and_review_id"
+    t.index ["review_id", "clip_id"], name: "index_clips_reviews_on_review_id_and_clip_id"
   end
 
   create_table "reviews", force: :cascade do |t|

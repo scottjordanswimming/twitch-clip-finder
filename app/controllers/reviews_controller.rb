@@ -13,7 +13,6 @@ end
 @clip = Clip.find(params[:clip_id])
 
 @review = @clip.reviews.create(review_params)
-# @review.save
 
 redirect_to clip_path(@clip)
   end

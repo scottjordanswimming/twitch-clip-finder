@@ -16,3 +16,13 @@
    <label>
        <p><%= su.streamer.name %></p>
    <% end %>
+
+
+   <h3>Here are <%= @user.username%>'s reviewed clips:</h3>
+
+   <div>
+    
+      <% @user.reviews.each do |r| %>
+      <h3><%= link_to "#{r.title}", review_path(r)%></h3></br>
+      <% end %>
+      </div>

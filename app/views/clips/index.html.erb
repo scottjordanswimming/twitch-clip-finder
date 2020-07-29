@@ -3,11 +3,36 @@
 
 <p>Filter the clips:</p>
 
-<%= form_tag( '/', method: :get) do %>
-<%= select_tag "filter", options_for_select([ "All", "Created", "Reviewed"]) %>
+<%= form_tag('/', method: :get) %>
+  <label>Filter:</label><br>
+  <%= select_tag "filter", options_for_select([ "All", "Created", "Reviewed"]) %>
+  <%= submit_tag "Submit Filter" %>
 
-<%= submit_tag %>
+
+<%= params.inspect %>
+<% if params["filter"] == "Created"%>
+
+<%= @user.clips.each do |clip| %>
+<div class="well">
+<h3><%= clip.title %></h3>
+<p><%= clip.url %> </p>
+<p><%= clip.streamer_id %> </p>
+<%= link_to "Watch", clip_path(clip), :class => 'btn btn-default' %>
+</div>
 <% end %>
+
+<% elsif params["filter"] == "Reviewed"%>
+
+<%= @reviewed.each do |clip| %>
+<div class="well">
+<h3><%= clip.title %></h3>
+<p><%= clip.url %> </p>
+<p><%= clip.streamer_id %> </p>
+<%= link_to "Watch", clip_path(clip), :class => 'btn btn-default' %>
+</div>
+<% end %>
+
+<% else %>
 
 <% @clips.alpha.each do |clip| %>
 <div class="well">
@@ -16,4 +41,5 @@
 <p><%= clip.streamer_id %> </p>
 <%= link_to "Watch", clip_path(clip), :class => 'btn btn-default' %>
 </div>
+<% end %>
 <% end %>

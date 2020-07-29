@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   has_many :reviews
-    has_many :reviewed_clips, through: :reviews, source: :clip
+    has_many :reviews_clips, through: :reviews, source: :clip
   has_many :clips
 
   has_many :streamer_users
