@@ -5,7 +5,7 @@ class ClipsController < ApplicationController
   def index
     @clips = Clip.all
     @user = current_user
-    @reviewed = @user.reviewed_clips
+  
 
   end
 

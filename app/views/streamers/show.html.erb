@@ -1,19 +1,19 @@
 <h2>Streamer: <%= @streamer.name %></h2>
 
-<p>URL to Clip:<%= @clip.url %></p>
+  <p>URL to Clip:<%= @clip.url %></p>
 
 Streamers:</br />
-<ul>
-  <% @clip.streamers.each do |s| %>
-  <li><%= s.name %></li>
-  <% end %>
-</ul>
+  <ul>
+    <% @clip.streamers.each do |s| %>
+    <li><%= s.name %></li>
+    <% end %>
+  </ul>
 
 <%= link_to "Edit", edit_clip_path(@clip), :class => 'btn btn-default' %>
 <%= link_to "Delete", clip_path(@clip),
-method: :delete,
-data: {confirm: 'Are you sure?'},
- :class => 'btn btn-danger' %>
+  method: :delete,
+  data: {confirm: 'Are you sure?'},
+    :class => 'btn btn-danger' %>
 
 <hr>
 

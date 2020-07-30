@@ -1,14 +1,10 @@
 class UsersController < ApplicationController
-#redirect_if_not_logged_in
-#skip_before_action :verified_user, only: [:new, :create]
 
   def new
-  @user = User.new
+    @user = User.new
   end
 
   def create
-
-
     @user = User.new(user_params)
     if @user.valid?
       @user.save
@@ -25,7 +21,8 @@ class UsersController < ApplicationController
 
   private
 
-  def user_params
-    params.require(:user).permit(:username, :email, :password, animal_ids: [])
-  end
+    def user_params
+      params.require(:user).permit(:username, :email, :password, animal_ids: [])
+    end
+    
 end

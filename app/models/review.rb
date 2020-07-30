@@ -1,5 +1,4 @@
 class Review < ApplicationRecord
-
   belongs_to :clip
   has_one :user
 

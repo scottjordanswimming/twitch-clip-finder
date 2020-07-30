@@ -1,12 +1,10 @@
 class ApplicationController < ActionController::Base
  helper_method :current_user
-helper_method :logged_in?
+ helper_method :logged_in?
 
   private
 
-
-
-def verified_user
+  def verified_user
   #  redirect_to '/' unless user_is_authenticated
   end
 

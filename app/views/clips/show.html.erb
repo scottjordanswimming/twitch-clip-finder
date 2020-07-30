@@ -6,15 +6,11 @@
 src="http://www.youtube.com/embed/dzHcrUUjn0I"
 frameborder="0"></iframe></br />
 
-
 Streamers:</br />
 <ul>
   <% @clip.streamers.each do |s| %>
   <li><%= s.name %>       Make favorite?<%= check_box_tag 'streamer_favorite[]', checked = false, s.favorite, class: 'clip', :favorite => "streamer_favorite_#{s.favorite}" %></li>
-
-
   <% end %>
-
 </ul>
 
 <%= link_to "Edit", edit_clip_path(@clip), :class => 'btn btn-default' %>
@@ -23,12 +19,7 @@ method: :delete,
 data: {confirm: 'Are you sure?'},
  :class => 'btn btn-danger' %>
 
-
-
-
 <hr>
-
-
 
 <%= render 'reviews/reviews' %>
 <%= link_to "Create Review", new_clip_review_path(@clip), :class => 'btn btn-default' %>

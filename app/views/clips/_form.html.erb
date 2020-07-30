@@ -1,31 +1,29 @@
 <%= render partial: 'layouts/errors', locals: {object: @clip}  %>
 <%= form_for :clip, url: clips_path do |f| %>
-
-<p>
+  <p>
   <%= f.label :title %><br>
   <%= f.text_field(:title, {:class => 'form-control'}) %>
-</p>
+  </p>
 
-<p>
-  <%= f.label :url %><br>
-  <%= f.text_area(:url, {:class => 'form-control'}) %>
-</p>
+  <p>
+    <%= f.label :url %><br>
+    <%= f.text_area(:url, {:class => 'form-control'}) %>
+  </p>
 
   <div>
     <p>Choose a streamer:</p>
-    <%= Streamer.all.each do |s| %>
+      <%= Streamer.all.each do |s| %>
     <p>
       <label for="streamer_id_<%= s.id %>"><%= s.name %></label>
       <input type ="checkbox" name="clip[streamer_ids][]" value="<%= s.id %>" id="streamer_id_<%= s.id %>">
     </p>
       <% end %>
 
-      <p> Or Create a new streamer:</p>
-  <input type="text" id="clip_streamers_attributes_0_name" name="clip[streamers_attributes][0][name]" />
+    <p> Or Create a new streamer:</p>
+    <input type="text" id="clip_streamers_attributes_0_name" name="clip[streamers_attributes][0][name]" />
+  </div>
 
-</div>
-
-<p>
-  <%= f.submit({:class => 'btn btn-primary'}) %>
-</p>
+  <p>
+    <%= f.submit({:class => 'btn btn-primary'}) %>
+  </p>
 <% end %>

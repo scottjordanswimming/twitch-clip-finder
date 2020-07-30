@@ -6,7 +6,6 @@ class User < ApplicationRecord
   has_many :streamer_users
     has_many :streamers, through: :streamer_users
 
-
   has_secure_password
 
   validates :username, presence: true, uniqueness: true
@@ -20,7 +19,7 @@ class User < ApplicationRecord
      self.find_or_create_by(username: auth[:info][:email]) do |u|
        u.email = auth[:info][:email]
        u.password = SecureRandom.hex
-
-     end
-   end
+      end
+  end
+  
 end

@@ -1,11 +1,10 @@
 <h3>Reviews</h3>
-
 <% @clip.reviews.each do |review| %>
-<div class = "Well">
-<p> <strong>Title: <%= review.title %> </p>
-<p>Review:  <%= review.body %> </strong></p>
-  <%= link_to '[X]', [review.clip, review],
-  method: :delete,
-  data: { confirm: 'Are you sure?'} %></p>
-</div>
+  <div class = "Well">
+    <p> <strong>Title: <%= review.title %> </p>
+    <p>Review:  <%= review.body %> </strong></p>
+      <%= link_to '[X]', [review.clip, review],
+        method: :delete,
+        data: { confirm: 'Are you sure?'} %></p>
+  </div>
 <% end %>

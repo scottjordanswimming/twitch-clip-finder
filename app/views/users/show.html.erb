@@ -1,28 +1,23 @@
 <h1>Clip Finder</h1>
+  <h2>Welcome to <%= @user.username%>'s homepage! </h2>
+    <h3>Here are the clips created by <%=@user.username%>:</h3>
+      <div>
+        <% @user.clips.each do |c| %>
+        <h3><%= link_to "#{c.title}", clip_path(c)%></h3></br>
+        <% end %>
+      </div>
 
-<h2>Welcome to <%= @user.username%>'s homepage! </h2>
-<h3>Here are the clips created by <%=@user.username%>:</h3>
-
-<div>
-<% @user.clips.each do |c| %>
-<h3><%= link_to "#{c.title}", clip_path(c)%></h3></br>
-<% end %>
-</div>
-
-<h3>Here are <%= @user.username%>'s favorite streamers:</h3>
-
-<div>
-   <% StreamerUser.all.each do |su| %>
-   <label>
-       <p><%= su.streamer.name %></p>
-   <% end %>
+    <h3>Here are <%= @user.username%>'s favorite streamers:</h3>
+      <div>
+        <% StreamerUser.all.each do |su| %>
+          <label>
+            <p><%= su.streamer.name %></p>
+        <% end %>
 
 
    <h3>Here are <%= @user.username%>'s reviewed clips:</h3>
-
-   <div>
-    
+    <div>
       <% @user.reviews.each do |r| %>
-      <h3><%= link_to "#{r.title}", review_path(r)%></h3></br>
+        <h3><%= link_to "#{r.title}", review_path(r)%></h3></br>
       <% end %>
-      </div>
+    </div>

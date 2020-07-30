@@ -1,10 +1,10 @@
 <h1>Edit Clip</h1>
 
 <%= form_for :clip, url: clip_path(@clip), method: :patch do |f| %>
-<% if @clip.errors.any? %>
-<%  @clip.errors.full_messages.each do |msg| %>
-<div class ="alert alert-danger"><%= msg %></div>
-<% end %>
+  <% if @clip.errors.any? %>
+    <%  @clip.errors.full_messages.each do |msg| %>
+    <div class ="alert alert-danger"><%= msg %></div>
+    <% end %>
 <% end %>
 <p>
   <%= f.label :title %><br>
@@ -21,30 +21,24 @@
   <ul>
     <% @clip.streamers.each do |s| %>
     <li><%= s.name %>" Make favorite?:"<%= check_box_tag 'streamer_favorite[]', checked = false, s.favorite, class: 'clip', :favorite => "streamer_favorite_#{s.favorite}" %></li>
-
-
     <% end %>
-
   </ul>
+
   <div>
     <p>Choose a streamer:</p>
-    <%= Streamer.all.each do |s| %>
+      <%= Streamer.all.each do |s| %>
     <p>
-      <label for="streamer_id_<%= s.id %>"><%= s.name %></label>
-      <input type ="checkbox" name="clip[streamer_ids][]" value="<%= s.id %>" id="streamer_id_<%= s.id %>">
+        <label for="streamer_id_<%= s.id %>"><%= s.name %></label>
+        <input type ="checkbox" name="clip[streamer_ids][]" value="<%= s.id %>" id="streamer_id_<%= s.id %>">
     </p>
-      <% end %>
+        <% end %>
 
-      <p> Or Create a new streamer:</p>
-  <input type="text" id="clip_streamers_attributes_0_name" name="clip[streamers_attributes][0][name]" />
-
-
-
-
-
-    </div>
+    <p> Or Create a new streamer:</p>
+    <input type="text" id="clip_streamers_attributes_0_name" name="clip[streamers_attributes][0][name]" />
+</div>
 
 <p>
   <%= f.submit({:class => 'btn btn-primary'}) %>
 </p>
+
 <% end %>
